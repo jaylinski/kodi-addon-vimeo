@@ -1,0 +1,22 @@
+[
+    {
+        "url": "https://api.vimeo.com/channels?page=1&per_page=3&query=sport",
+        "mock": "api_users_search.json"
+    },
+    {
+        "url": "https://api.vimeo.com/users?page=1&per_page=3&query=sport",
+        "mock": "api_users_search.json"
+    },
+    {
+        "url": "https://player.vimeo.com/video/338319342/config",
+        "mock": "api_video_config.json"
+    },
+    {
+        "url": "https://api.vimeo.com/videos/352494023",
+        "mock": "api_videos_detail.json"
+    },
+    {
+        "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
+        "mock": "api_videos_search.json"
+    }
+]
