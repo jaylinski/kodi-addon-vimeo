@@ -27,12 +27,11 @@ This [Kodi](https://github.com/xbmc/xbmc) Add-on provides a minimal interface fo
 
 Documentation of the **public** interface.
 
-### plugin://plugin.video.vimeo/play/?[video_id|channel_id]
+### plugin://plugin.video.vimeo/play/?[video_id]
 
 Examples:
 
 * `plugin://plugin.video.vimeo/play/?video_id=1`
-* `plugin://plugin.video.vimeo/play/?channel_id=1`
 
 ## Development
 
