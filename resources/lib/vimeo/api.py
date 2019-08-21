@@ -153,7 +153,7 @@ class Api:
             # Avoid rate limiting:
             # https://developer.vimeo.com/guidelines/rate-limiting#avoid-rate-limiting
             "fields": "uri,resource_key,name,description,type,duration,created_time,location,"
-                      "bio,stats,user,release_time,pictures,metadata"
+                      "bio,stats,user,account,release_time,pictures,metadata"
         }
 
     def _extract_url_from_video_config(self, video_config):
