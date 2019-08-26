@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="de_DE">Vimeo lässt dich fantastische Videos der weltbesten Filmemacher entdecken.</summary>
-		<summary lang="en_GB">Vimeo lets you discover amazing videos from the world’s best creators.</summary>
+        <summary lang="en_GB">Vimeo lets you discover amazing videos from the world’s best creators.</summary>
         <language></language>
         <!-- Has to be activated as soon as login is implemented:
         <disclaimer lang="de_DE">Durch die Nutzung dieses Add-ons stimmst du zu, dass dieses Add-on für dich auf deine Daten zugreifen darf.</disclaimer>
