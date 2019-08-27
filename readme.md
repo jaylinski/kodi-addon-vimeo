@@ -14,6 +14,7 @@ This [Kodi](https://github.com/xbmc/xbmc) Add-on provides a minimal interface fo
 ## Features
 
 * Search
+* Discover new videos
 * Play videos
 
 ## Installation
