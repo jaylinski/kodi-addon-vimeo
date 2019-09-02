@@ -2,7 +2,7 @@
 
 <img align="right" src="https://github.com/xbmc/xbmc/raw/master/addons/webinterface.default/icon-128.png" alt="Kodi logo">
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jaylinski/kodi-addon-vimeo.svg)](https://github.com/jaylinski/kodi-addon-soundcloud/releases)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jaylinski/kodi-addon-vimeo.svg)](https://github.com/jaylinski/kodi-addon-vimeo/releases)
 [![Build Status](https://travis-ci.com/jaylinski/kodi-addon-vimeo.svg?branch=master)](https://travis-ci.com/jaylinski/kodi-addon-vimeo)
 [![Link to Kodi forum](https://img.shields.io/badge/Kodi-Forum-informational.svg)](https://forum.kodi.tv/showthread.php?tid=220437)
 [![Link to Kodi wiki](https://img.shields.io/badge/Kodi-Wiki-informational.svg)](https://kodi.wiki/view/Add-on:Vimeo)
