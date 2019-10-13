@@ -110,13 +110,13 @@ class ApiTestCase(TestCase):
         self.api.video_stream = "360p"
         self.api._do_player_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/13101116")
-        self.assertEqual(res, "https://gcs-vimeo.akamaized.net/exp=1560644298~acl=%2A%2F1363060449.mp4%shortened")
+        self.assertEqual(res, "https://gcs-vimeo.akamaized.net/exp=1570994045~acl=%2A%2F1363060449.mp4%shortened")
 
         # Progressive (fallback)
         self.api.video_stream = "720p"
         self.api._do_player_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/13101116")
-        self.assertEqual(res, "https://gcs-vimeo.akamaized.net/exp=1560644298~acl=%2A%2F1363060455.mp4%shortened")
+        self.assertEqual(res, "https://gcs-vimeo.akamaized.net/exp=1570994045~acl=%2A%2F1363060455.mp4%shortened")
 
         with open("./tests/mocks/api_video_config_av1.json") as f:
             mock_data = f.read()
