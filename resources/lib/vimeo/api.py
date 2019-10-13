@@ -168,7 +168,7 @@ class Api:
         video_format = video_format.split(":")
         video_type = video_format[0]
         video_type_setting = video_format[1]
-        video_has_av1_codec = len(video_config["video"]["file_codecs"]["av1"])
+        video_has_av1_codec = len(video_config["request"]["file_codecs"]["av1"])
 
         if video_type == "hls" or video_has_av1_codec:
             hls_default_cdn = video_files["hls"]["default_cdn"]
