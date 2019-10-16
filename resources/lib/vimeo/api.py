@@ -98,49 +98,47 @@ class Api:
 
                 if kind == "video":
                     video = Video(id=item["resource_key"], label=item["name"])
-                    # TODO Improve image extraction
-                    video.thumb = item["pictures"]["sizes"][1]["link"]
+                    video.thumb = self._get_picture(item["pictures"])
                     video.uri = item["uri"]
                     video.info = {
-                        "playcount": item["stats"].get("plays", 0),
                         "date": item["release_time"],
-                        "duration": item["duration"],
                         "description": item["description"],
-                        "user": item["user"]["name"]
+                        "duration": item["duration"],
+                        "picture": self._get_picture(item["pictures"], 4),
+                        "playcount": item["stats"].get("plays", 0),
+                        "user": item["user"]["name"],
+                        "userThumb": self._get_picture(item["user"]["pictures"], 3),
                     }
                     collection.items.append(video)
 
                 elif is_channel:
                     channel = Channel(id=item["resource_key"], label=item["name"])
-                    # TODO Improve image extraction
-                    channel.thumb = item["pictures"]["sizes"][3]["link"]
+                    channel.thumb = self._get_picture(item["pictures"], 3)
                     channel.uri = item["metadata"]["connections"]["videos"]["uri"]
                     channel.info = {
                         "date": item["created_time"],
-                        "description": item.get("description", "")
+                        "description": item.get("description", ""),
                     }
                     collection.items.append(channel)
 
                 elif is_group:
                     group = Group(id=item["resource_key"], label=item["name"])
-                    # TODO Improve image extraction
-                    group.thumb = item["pictures"]["sizes"][3]["link"]
+                    group.thumb = self._get_picture(item["pictures"], 3)
                     group.uri = item["metadata"]["connections"]["videos"]["uri"]
                     group.info = {
                         "date": item["created_time"],
-                        "description": item.get("description", "")
+                        "description": item.get("description", ""),
                     }
                     collection.items.append(group)
 
                 elif is_user:
                     user = User(id=item["resource_key"], label=item["name"])
-                    # TODO Improve image extraction
-                    user.thumb = item["pictures"]["sizes"][3]["link"]
+                    user.thumb = self._get_picture(item["pictures"], 3)
                     user.uri = item["metadata"]["connections"]["videos"]["uri"]
                     user.info = {
                         "country": item.get("location", ""),
                         "date": item["created_time"],
-                        "description": item["bio"]
+                        "description": item["bio"],
                     }
                     collection.items.append(user)
 
@@ -185,6 +183,12 @@ class Api:
 
         else:
             raise RuntimeError("Could not extract video URL")
+
+    def _get_picture(self, data, size=1):
+        try:
+            return data["sizes"][size]["link"]
+        except IndexError:
+            return data["sizes"][0]["link"]
 
     def _hls_playlist_master_remove_av1_streams(self, playlist):
         """
