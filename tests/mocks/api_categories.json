@@ -1,0 +1,431 @@
+{
+    "total": 16,
+    "page": 1,
+    "per_page": 25,
+    "paging": {
+        "next": null,
+        "previous": null,
+        "first": "/categories?fields=uri%2Cresource_key%2Cname%2Ctop_level%2Cpictures.sizes.width%2Cpictures.sizes.link%2Cparent%2Csubcategories%2Cmetadata.interactions%2Cmetadata.connections.videos%2Cmetadata.connections.users%2Cicon.sizes.width%2Cicon.sizes.link&sort=last_video_featured_time&direction=desc&page=1",
+        "last": "/categories?fields=uri%2Cresource_key%2Cname%2Ctop_level%2Cpictures.sizes.width%2Cpictures.sizes.link%2Cparent%2Csubcategories%2Cmetadata.interactions%2Cmetadata.connections.videos%2Cmetadata.connections.users%2Cicon.sizes.width%2Cicon.sizes.link&sort=last_video_featured_time&direction=desc&page=1"
+    },
+    "data": [
+        {
+            "uri": "/categories/animation",
+            "name": "Animation",
+            "top_level": true,
+            "pictures": {
+                "sizes": [
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/video/858725975_100x75.jpg?r=pad"
+                    },
+                    {
+                        "width": 200,
+                        "link": "https://i.vimeocdn.com/video/858725975_200x150.jpg?r=pad"
+                    },
+                    {
+                        "width": 295,
+                        "link": "https://i.vimeocdn.com/video/858725975_295x166.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/858725975_640x360.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/858725975_1280x720.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/858725975_1920x1080.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/858725975_640x640.jpg?r=pad"
+                    },
+                    {
+                        "width": 960,
+                        "link": "https://i.vimeocdn.com/video/858725975_960x960.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/858725975_1280x1280.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/858725975_1920x1920.jpg?r=pad"
+                    }
+                ]
+            },
+            "parent": null,
+            "metadata": {
+                "connections": {
+                    "users": {
+                        "uri": "/categories/animation/users",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 1770706
+                    },
+                    "videos": {
+                        "uri": "/categories/animation/videos",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 691317
+                    }
+                }
+            },
+            "subcategories": [
+                {
+                    "uri": "/categories/animation/subcategories/2d",
+                    "name": "2D",
+                    "link": "https://vimeo.com/categories/animation/2d/videos"
+                },
+                {
+                    "uri": "/categories/animation/subcategories/3d",
+                    "name": "3D/CG",
+                    "link": "https://vimeo.com/categories/animation/3d/videos"
+                },
+                {
+                    "uri": "/categories/animation/subcategories/stopmotion",
+                    "name": "Stop Frame",
+                    "link": "https://vimeo.com/categories/animation/stopmotion/videos"
+                },
+                {
+                    "uri": "/categories/animation/subcategories/mograph",
+                    "name": "Mograph",
+                    "link": "https://vimeo.com/categories/animation/mograph/videos"
+                },
+                {
+                    "uri": "/categories/animation/subcategories/projectionmapping",
+                    "name": "Projection Mapping",
+                    "link": "https://vimeo.com/categories/animation/projectionmapping/videos"
+                },
+                {
+                    "uri": "/categories/animation/subcategories/vfx",
+                    "name": "VFX",
+                    "link": "https://vimeo.com/categories/animation/vfx/videos"
+                }
+            ],
+            "icon": {
+                "sizes": [
+                    {
+                        "width": 20,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=20&h=20&r=pad&f=png"
+                    },
+                    {
+                        "width": 40,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=40&h=40&r=pad&f=png"
+                    },
+                    {
+                        "width": 60,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=60&h=60&r=pad&f=png"
+                    },
+                    {
+                        "width": 80,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=80&h=80&r=pad&f=png"
+                    },
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=100&h=100&r=pad&f=png"
+                    },
+                    {
+                        "width": 120,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=120&h=120&r=pad&f=png"
+                    },
+                    {
+                        "width": 140,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=140&h=140&r=pad&f=png"
+                    },
+                    {
+                        "width": 160,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=160&h=160&r=pad&f=png"
+                    },
+                    {
+                        "width": 180,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_animation_64.png%3FDEV%3Fv%3D2&w=180&h=180&r=pad&f=png"
+                    }
+                ]
+            },
+            "resource_key": "a622babbdfc1bd91a993b011a47b5a02330f5812"
+        },
+        {
+            "uri": "/categories/travel",
+            "name": "Travel",
+            "top_level": true,
+            "pictures": {
+                "sizes": [
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/video/649307891_100x75.jpg?r=pad"
+                    },
+                    {
+                        "width": 200,
+                        "link": "https://i.vimeocdn.com/video/649307891_200x150.jpg?r=pad"
+                    },
+                    {
+                        "width": 295,
+                        "link": "https://i.vimeocdn.com/video/649307891_295x166.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/649307891_640x360.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/649307891_1280x720.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/649307891_1920x1080.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/649307891_640x272.jpg?r=pad"
+                    },
+                    {
+                        "width": 960,
+                        "link": "https://i.vimeocdn.com/video/649307891_960x408.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/649307891_1280x544.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/649307891_1920x816.jpg?r=pad"
+                    }
+                ]
+            },
+            "parent": null,
+            "metadata": {
+                "connections": {
+                    "users": {
+                        "uri": "/categories/travel/users",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 1516266
+                    },
+                    "videos": {
+                        "uri": "/categories/travel/videos",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 303872
+                    }
+                }
+            },
+            "subcategories": [
+                {
+                    "uri": "/categories/travel/subcategories/asia",
+                    "name": "Asia",
+                    "link": "https://vimeo.com/categories/travel/asia/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/europe",
+                    "name": "Europe",
+                    "link": "https://vimeo.com/categories/travel/europe/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/northamerica",
+                    "name": "North America",
+                    "link": "https://vimeo.com/categories/travel/northamerica/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/africa",
+                    "name": "Africa",
+                    "link": "https://vimeo.com/categories/travel/africa/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/southamerica",
+                    "name": "South America",
+                    "link": "https://vimeo.com/categories/travel/southamerica/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/australasia",
+                    "name": "Australasia",
+                    "link": "https://vimeo.com/categories/travel/australasia/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/antarctica",
+                    "name": "Antarctica",
+                    "link": "https://vimeo.com/categories/travel/antarctica/videos"
+                },
+                {
+                    "uri": "/categories/travel/subcategories/space",
+                    "name": "Space!",
+                    "link": "https://vimeo.com/categories/travel/space/videos"
+                }
+            ],
+            "icon": {
+                "sizes": [
+                    {
+                        "width": 20,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=20&h=20&r=pad&f=png"
+                    },
+                    {
+                        "width": 40,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=40&h=40&r=pad&f=png"
+                    },
+                    {
+                        "width": 60,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=60&h=60&r=pad&f=png"
+                    },
+                    {
+                        "width": 80,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=80&h=80&r=pad&f=png"
+                    },
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=100&h=100&r=pad&f=png"
+                    },
+                    {
+                        "width": 120,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=120&h=120&r=pad&f=png"
+                    },
+                    {
+                        "width": 140,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=140&h=140&r=pad&f=png"
+                    },
+                    {
+                        "width": 160,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=160&h=160&r=pad&f=png"
+                    },
+                    {
+                        "width": 180,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_travel_64.png%3FDEV%3Fv%3D2&w=180&h=180&r=pad&f=png"
+                    }
+                ]
+            },
+            "resource_key": "9884bb14a11d9d80337387d4ae21d90e09bee867"
+        },
+        {
+            "uri": "/categories/music",
+            "name": "Music",
+            "top_level": true,
+            "pictures": {
+                "sizes": [
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/video/507640163_100x75.jpg?r=pad"
+                    },
+                    {
+                        "width": 200,
+                        "link": "https://i.vimeocdn.com/video/507640163_200x150.jpg?r=pad"
+                    },
+                    {
+                        "width": 295,
+                        "link": "https://i.vimeocdn.com/video/507640163_295x166.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/507640163_640x360.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/507640163_1280x720.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/507640163_1920x1080.jpg?r=pad"
+                    },
+                    {
+                        "width": 640,
+                        "link": "https://i.vimeocdn.com/video/507640163_640x360.jpg?r=pad"
+                    },
+                    {
+                        "width": 960,
+                        "link": "https://i.vimeocdn.com/video/507640163_960x540.jpg?r=pad"
+                    },
+                    {
+                        "width": 1280,
+                        "link": "https://i.vimeocdn.com/video/507640163_1280x720.jpg?r=pad"
+                    },
+                    {
+                        "width": 1920,
+                        "link": "https://i.vimeocdn.com/video/507640163_1920x1080.jpg?r=pad"
+                    }
+                ]
+            },
+            "parent": null,
+            "metadata": {
+                "connections": {
+                    "users": {
+                        "uri": "/categories/music/users",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 2545267
+                    },
+                    "videos": {
+                        "uri": "/categories/music/videos",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 449829
+                    }
+                }
+            },
+            "subcategories": [
+                {
+                    "uri": "/categories/music/subcategories/musicvideos",
+                    "name": "Music Videos",
+                    "link": "https://vimeo.com/categories/music/musicvideos/videos"
+                },
+                {
+                    "uri": "/categories/music/subcategories/concerts",
+                    "name": "Live Music",
+                    "link": "https://vimeo.com/categories/music/concerts/videos"
+                },
+                {
+                    "uri": "/categories/music/subcategories/musicdocumentary",
+                    "name": "Music Documentary",
+                    "link": "https://vimeo.com/categories/music/musicdocumentary/videos"
+                }
+            ],
+            "icon": {
+                "sizes": [
+                    {
+                        "width": 20,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=20&h=20&r=pad&f=png"
+                    },
+                    {
+                        "width": 40,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=40&h=40&r=pad&f=png"
+                    },
+                    {
+                        "width": 60,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=60&h=60&r=pad&f=png"
+                    },
+                    {
+                        "width": 80,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=80&h=80&r=pad&f=png"
+                    },
+                    {
+                        "width": 100,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=100&h=100&r=pad&f=png"
+                    },
+                    {
+                        "width": 120,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=120&h=120&r=pad&f=png"
+                    },
+                    {
+                        "width": 140,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=140&h=140&r=pad&f=png"
+                    },
+                    {
+                        "width": 160,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=160&h=160&r=pad&f=png"
+                    },
+                    {
+                        "width": 180,
+                        "link": "https://i.vimeocdn.com/grab?s=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fcategories%2Firis_icon_music_64.png%3FDEV%3Fv%3D2&w=180&h=180&r=pad&f=png"
+                    }
+                ]
+            },
+            "resource_key": "a35d9defa20ba9be724f10f368f50ef539de9210"
+        }
+    ]
+}

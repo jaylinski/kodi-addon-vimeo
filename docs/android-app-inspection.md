@@ -19,7 +19,7 @@
 
 Install the Vimeo-App on your Android phone.
 
-```
+```bash
 # Find APK on phone
 adb shell pm list packages | grep vimeo
 adb shell pm path com.vimeo.android.videoapp
@@ -31,7 +31,7 @@ mv base.apk com.vimeo.android.videoapp.apk
 
 ## Enable debug mode and disable certificate pinning
 
-```
+```bash
 # Decompile APK
 apktool d com.vimeo.android.videoapp.apk
 

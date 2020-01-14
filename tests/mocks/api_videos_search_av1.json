@@ -1,0 +1,605 @@
+{
+    "total": 58,
+    "page": 1,
+    "per_page": 1,
+    "paging": {
+        "next": "/videos?query=The%20Pet%20Files&fields=uri%2Cresource_key%2Cname%2Cdescription%2Ctype%2Cduration%2Ccreated_time%2Clocation%2Cbio%2Cstats%2Cuser%2Caccount%2Crelease_time%2Cpictures%2Cmetadata%2Cplay&sort=relevant&per_page=1&page=2",
+        "previous": null,
+        "first": "/videos?query=The%20Pet%20Files&fields=uri%2Cresource_key%2Cname%2Cdescription%2Ctype%2Cduration%2Ccreated_time%2Clocation%2Cbio%2Cstats%2Cuser%2Caccount%2Crelease_time%2Cpictures%2Cmetadata%2Cplay&sort=relevant&per_page=1&page=1",
+        "last": "/videos?query=The%20Pet%20Files&fields=uri%2Cresource_key%2Cname%2Cdescription%2Ctype%2Cduration%2Ccreated_time%2Clocation%2Cbio%2Cstats%2Cuser%2Caccount%2Crelease_time%2Cpictures%2Cmetadata%2Cplay&sort=relevant&per_page=1&page=58"
+    },
+    "data": [
+        {
+            "uri": "/videos/392544832",
+            "name": "The Pet Files",
+            "description": "In 2029, an Animal Physic Crime Whisperer taps into animals’ minds to solve crimes while working under the umbrella of a taxpayer-money-hemorrhaging F.B.I. Pet Files Division. Official Selection, 2019 Borscht Film Festival.\n\nCAST\nPipus the Wise - \"Agent Persia\"\nKendra Uncut - \"Agent Stix\"\nRose Luardo - \"Agent Rose\"\nScott J. Ross - \"Agent Murph\"\nYung Hurn - \"Yung Hurn\"\nSadat Waddy - \"Elon\"\nIsa Rodriguez - \"Cyberpunk Killer\"\n\"Sarge\" Bohleman, Chris Wood, Betsy Oliphant, and Branden McLean - \"Cops\"\nJosh Alvarez - \"SWAT Leader\"\nTony DiPatrizio, James Doolittle, Michael Parsell, Lena Parsell, Naeem Juwan - \"SWAT Officers\"\nFranklin the Pig - \"Yako\" (thanks to FairyTail Acres Rescue)\nWeed Chameleon - \"Chameleon\"\nJamerson, Christian, Y, Nate Harris, & Shannon Sun-Higginson - \"LAN Center Gamers\"\n\nCREW\nDirected by Public Cinema Club (Pipus the Wise, Kendra Uncut & Scott J. Ross)\nCommissioned by Syfy\nExecutive Producer - James Doolittle for All Ages Productions\nProducer - Shannon Sun-Higginson\nAssistant Director - Callum Hanlon\nCinematographer - Ian Mosley-Duffy\nAC - Mike Toland\nGaffer - Shane Moore\nKey Grip - Kevin Gray\nProduction Designer - Adam Fergurson\nProp Assist - Matt Reed\nLocation Sound Mixer - Sean Hamilton\nHair & Makeup - Emily Rothstein\nIntern - Dylan Majerus\nPA - Layla Mzrowoski\n\nPOST\nEdit & Sound Design - Public Cinema Club\nPet Files Title Sequence - Jimmy Simpson\nVFX & Motion Graphics - Harvey Benschoter & Scott J. Ross\nSound Mix -  Timothy Day\nColor - David Bauer\n\nCamera & Lighting by Expressway Cinema Rentals\nAnimal Casting by Dognerd Animal Talent\nThanks to Jeff Barlow, Klip Collective, Nu Millenium and Localhost for locations in Philadelphia",
+            "type": "video",
+            "duration": 436,
+            "created_time": "2020-02-19T20:06:13+00:00",
+            "release_time": "2020-02-19T20:06:13+00:00",
+            "pictures": {
+                "uri": "/videos/392544832/pictures/857679735",
+                "active": true,
+                "type": "custom",
+                "sizes": [
+                    {
+                        "width": 100,
+                        "height": 75,
+                        "link": "https://i.vimeocdn.com/video/857679735_100x75.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_100x75.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 200,
+                        "height": 150,
+                        "link": "https://i.vimeocdn.com/video/857679735_200x150.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_200x150.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 295,
+                        "height": 166,
+                        "link": "https://i.vimeocdn.com/video/857679735_295x166.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_295x166.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 640,
+                        "height": 360,
+                        "link": "https://i.vimeocdn.com/video/857679735_640x360.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_640x360.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 1280,
+                        "height": 720,
+                        "link": "https://i.vimeocdn.com/video/857679735_1280x720.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_1280x720.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 1920,
+                        "height": 1080,
+                        "link": "https://i.vimeocdn.com/video/857679735_1920x1080.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_1920x1080.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 640,
+                        "height": 360,
+                        "link": "https://i.vimeocdn.com/video/857679735_640x360.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_640x360.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 960,
+                        "height": 540,
+                        "link": "https://i.vimeocdn.com/video/857679735_960x540.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_960x540.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 1280,
+                        "height": 720,
+                        "link": "https://i.vimeocdn.com/video/857679735_1280x720.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_1280x720.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 1920,
+                        "height": 1080,
+                        "link": "https://i.vimeocdn.com/video/857679735_1920x1080.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_1920x1080.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    },
+                    {
+                        "width": 1280,
+                        "height": 720,
+                        "link": "https://i.vimeocdn.com/video/857679735_1280x720.jpg?r=pad",
+                        "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F857679735_1280x720.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                    }
+                ],
+                "resource_key": "0fe0f048218711c4f25f44959f984c71578bbfc1"
+            },
+            "stats": {
+                "plays": null
+            },
+            "metadata": {
+                "connections": {
+                    "comments": {
+                        "uri": "/videos/392544832/comments",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 13
+                    },
+                    "credits": {
+                        "uri": "/videos/392544832/credits",
+                        "options": [
+                            "GET",
+                            "POST"
+                        ],
+                        "total": 3
+                    },
+                    "likes": {
+                        "uri": "/videos/392544832/likes",
+                        "options": [
+                            "GET"
+                        ],
+                        "total": 172
+                    },
+                    "pictures": {
+                        "uri": "/videos/392544832/pictures",
+                        "options": [
+                            "GET",
+                            "POST"
+                        ],
+                        "total": 1
+                    },
+                    "texttracks": {
+                        "uri": "/videos/392544832/texttracks",
+                        "options": [
+                            "GET",
+                            "POST"
+                        ],
+                        "total": 0
+                    },
+                    "related": {
+                        "uri": "/videos?query=The Pet Files&fields=uri,resource_key,name,description,type,duration,created_time,location,bio,stats,user,account,release_time,pictures,metadata,play&sort=relevant&per_page=1&offset=1",
+                        "options": [
+                            "GET"
+                        ]
+                    }
+                },
+                "interactions": {
+                    "report": {
+                        "uri": "/videos/392544832/report",
+                        "options": [
+                            "POST"
+                        ],
+                        "reason": [
+                            "pornographic",
+                            "harassment",
+                            "advertisement",
+                            "ripoff",
+                            "incorrect rating",
+                            "spam",
+                            "causes harm"
+                        ]
+                    }
+                }
+            },
+            "user": {
+                "uri": "/users/55340694",
+                "name": "Public Cinema Club",
+                "link": "https://vimeo.com/publiccinemaclub",
+                "location": "Los Angeles, CA, USA",
+                "bio": "Public Cinema Club is a private cinema club based in Philadelphia and LA. Creators of The Pet Files, Deer Squad: The Movie (Sundance 2017, Super Deluxe), Matt Ox's Overwhelming, Hovertwins, and Eyes of The Beholder.",
+                "short_bio": "Directing collective based in Philadelphia and LA.",
+                "created_time": "2016-08-10T23:12:51+00:00",
+                "pictures": {
+                    "uri": "/users/55340694/pictures/22413647",
+                    "active": true,
+                    "type": "custom",
+                    "sizes": [
+                        {
+                            "width": 30,
+                            "height": 30,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_30x30"
+                        },
+                        {
+                            "width": 75,
+                            "height": 75,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_75x75"
+                        },
+                        {
+                            "width": 100,
+                            "height": 100,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_100x100"
+                        },
+                        {
+                            "width": 300,
+                            "height": 300,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_300x300"
+                        },
+                        {
+                            "width": 72,
+                            "height": 72,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_72x72"
+                        },
+                        {
+                            "width": 144,
+                            "height": 144,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_144x144"
+                        },
+                        {
+                            "width": 216,
+                            "height": 216,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_216x216"
+                        },
+                        {
+                            "width": 288,
+                            "height": 288,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_288x288"
+                        },
+                        {
+                            "width": 360,
+                            "height": 360,
+                            "link": "https://i.vimeocdn.com/portrait/22413647_360x360"
+                        }
+                    ],
+                    "resource_key": "31953bf6b08376b707923c2c0d3f0ab6dd11af78"
+                },
+                "websites": [
+                    {
+                        "name": "PCC Facebook",
+                        "link": "http://www.facebook.com/publiccinemaclub/",
+                        "description": null
+                    },
+                    {
+                        "name": "Pipus's Instagram",
+                        "link": "http://www.instagram.com/pipusthewise/",
+                        "description": "Pipus - Co-Founder"
+                    },
+                    {
+                        "name": "Kendra's Instagram",
+                        "link": "http://www.instagram.com/kendra_uncut/",
+                        "description": "Kendra - Co-Founder"
+                    },
+                    {
+                        "name": "Scott J. Ross's Instagram",
+                        "link": "https://www.instagram.com/scottrossfilm/",
+                        "description": "Scott J. Ross - Co-Founder"
+                    },
+                    {
+                        "name": "Official Website",
+                        "link": "http://publiccinemaclub.com",
+                        "description": "Public Cinema Club"
+                    }
+                ],
+                "metadata": {
+                    "connections": {
+                        "activities": {
+                            "uri": "/users/55340694/activities",
+                            "options": [
+                                "GET"
+                            ]
+                        },
+                        "albums": {
+                            "uri": "/users/55340694/albums",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 1
+                        },
+                        "appearances": {
+                            "uri": "/users/55340694/appearances",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "categories": {
+                            "uri": "/users/55340694/categories",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "channels": {
+                            "uri": "/users/55340694/channels",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "feed": {
+                            "uri": "/users/55340694/feed",
+                            "options": [
+                                "GET"
+                            ]
+                        },
+                        "followers": {
+                            "uri": "/users/55340694/followers",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 231
+                        },
+                        "following": {
+                            "uri": "/users/55340694/following",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 6
+                        },
+                        "groups": {
+                            "uri": "/users/55340694/groups",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "likes": {
+                            "uri": "/users/55340694/likes",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "membership": {
+                            "uri": "/users/55340694/membership/",
+                            "options": [
+                                "PATCH"
+                            ]
+                        },
+                        "moderated_channels": {
+                            "uri": "/users/55340694/channels?filter=moderated",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "portfolios": {
+                            "uri": "/users/55340694/portfolios",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "videos": {
+                            "uri": "/users/55340694/videos",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 16
+                        },
+                        "watchlater": {
+                            "uri": "/users/55340694/watchlater",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "shared": {
+                            "uri": "/users/55340694/shared/videos",
+                            "options": [
+                                "GET"
+                            ],
+                            "total": 0
+                        },
+                        "pictures": {
+                            "uri": "/users/55340694/pictures",
+                            "options": [
+                                "GET",
+                                "POST"
+                            ],
+                            "total": 1
+                        }
+                    }
+                },
+                "resource_key": "64e83a28b281e491ef42a69dc268307a373e5457",
+                "account": "plus",
+                "badge": {
+                    "type": "plus",
+                    "text": "Plus",
+                    "alt_text": "Learn more about Vimeo Plus",
+                    "url": "/plus"
+                },
+                "preferences": {
+                    "videos": {
+                        "privacy": null
+                    }
+                }
+            },
+            "play": {
+                "progressive": [
+                    {
+                        "type": "video/mp4",
+                        "codec": "AV1",
+                        "width": 1920,
+                        "height": 1080,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1666570518.mp4",
+                        "created_time": "2020-02-21T21:02:48+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 230404926,
+                        "md5": "5034187b832b237b606a44206abe9115",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1666570518",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "AV1",
+                        "width": 1280,
+                        "height": 720,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1666570517.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=WeqKOUjZcNOWc6My5RoHTPcwcL8%3D",
+                        "created_time": "2020-02-21T21:02:48+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 143906133,
+                        "md5": "59fbae142b252d98abe9a6844d660e58",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1666570517",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "AV1",
+                        "width": 960,
+                        "height": 540,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1666570516.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=lmFdnuaFjYu9cWhnrq%2BBUBhr3Lw%3D",
+                        "created_time": "2020-02-21T21:02:48+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 78916908,
+                        "md5": "de3df906c69d8e1ed23880f15a6023f1",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1666570516",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "AV1",
+                        "width": 640,
+                        "height": 360,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1666570515.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=KA7gKNPeItXY6fW3jhATbcU4cs4%3D",
+                        "created_time": "2020-02-21T21:02:48+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 29702542,
+                        "md5": "a341ff7404e18eebe239efe340e1b509",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1666570515",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "AV1",
+                        "width": 426,
+                        "height": 240,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1666570514.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=WV6Botqe6jSDxufKZlBFQIlQMNs%3D",
+                        "created_time": "2020-02-21T21:02:48+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 20110140,
+                        "md5": "23d229857342b7c325c422bcbccd07d6",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1666570514",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "H264",
+                        "width": 1920,
+                        "height": 1080,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1663613697.mp4",
+                        "created_time": "2020-02-19T20:09:31+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 310638677,
+                        "md5": "43009957280d68d34d502cb6a47d8139",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1663613697",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "H264",
+                        "width": 960,
+                        "height": 540,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1663613671.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=TR0rhjfD3GEFeEb99wZB6DlBrjk%3D",
+                        "created_time": "2020-02-19T20:09:32+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 95721930,
+                        "md5": "5047394f13d81e3ba3c034031aea49cf",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1663613671",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "H264",
+                        "width": 1280,
+                        "height": 720,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1663613568.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=PDyTEIxsCe%2BXqPFqTNIQjzR3GEY%3D",
+                        "created_time": "2020-02-19T20:09:31+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 160190689,
+                        "md5": "d37834e709c309048f093956e23f98b6",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1663613568",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "H264",
+                        "width": 426,
+                        "height": 240,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1663612618.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=2K580GgES2wXVfLmc%2BjKPFwf6hI%3D",
+                        "created_time": "2020-02-19T20:08:52+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 20585961,
+                        "md5": "b6e21a8f417e3c8b5cc38031d7c25c4c",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1663612618",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    },
+                    {
+                        "type": "video/mp4",
+                        "codec": "H264",
+                        "width": 640,
+                        "height": 360,
+                        "link_expiration_time": "2020-02-24T01:34:53+00:00",
+                        "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/3508/15/392544832/1663612616.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1582508093&Signature=9%2B0y0EMQOWjjtI6VYXYGJlqMmiE%3D",
+                        "created_time": "2020-02-19T20:08:52+00:00",
+                        "fps": 23.980000000000000426325641456060111522674560546875,
+                        "size": 35855758,
+                        "md5": "5bb449480f618c5ff2aec54bb6db4882",
+                        "log": {
+                            "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/1663612616",
+                            "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                            "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                        }
+                    }
+                ],
+                "hls": {
+                    "link_expiration_time": "2020-02-24T00:34:53+00:00",
+                    "link": "https://player.vimeo.com/play/1666570518,1666570517,1666570516,1666570515,1666570514,1663613697,1663613671,1663613568,1663612618,1663612616/hls?",
+                    "log": {
+                        "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/hls",
+                        "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                    }
+                },
+                "dash": {
+                    "link_expiration_time": "2020-02-24T00:34:53+00:00",
+                    "link": "https://player.vimeo.com/play/1666570518,1666570517,1666570516,1666570515,1666570514,1663613697,1663613671,1663613568,1663612618,1663612616/dash?s=392544832_1582504493_9c79228d66bb41feeecf3de88ccb9099&context=Vimeo%5CController%5CApi%5CResources%5CVideosController.&logging=false",
+                    "log": {
+                        "play_link": "https://api.vimeo.com/videos/392544832/stats/play/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54/dash",
+                        "like_press_link": "https://api.vimeo.com/videos/392544832/stats/like_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "watchlater_press_link": "https://api.vimeo.com/videos/392544832/stats/watchlater_press/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "load_link": "https://api.vimeo.com/videos/392544832/stats/load/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54",
+                        "exit_link": "https://api.vimeo.com/videos/392544832/stats/exit/ts/1582497293:9daaeaab650db79a0353ec97755931e1a88eef54"
+                    }
+                },
+                "status": "playable"
+            },
+            "resource_key": "2ee3142e8cf12081385ff7208667bcac4b8dc5d4"
+        }
+    ]
+}

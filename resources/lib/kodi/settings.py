@@ -9,6 +9,11 @@ class Settings:
         "240p": "progressive:240p"
     }
 
+    VIDEO_CODEC = {
+        "AV1": "AV1",
+        "H.264": "H264",
+    }
+
     def __init__(self, addon):
         self.addon = addon
 
