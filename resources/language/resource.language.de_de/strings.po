@@ -131,8 +131,8 @@ msgstr "Vimeo Curation Kanäle"
 
 # GUI - Settings
 msgctxt "#30401"
-msgid "Cache gelöscht"
-msgstr ""
+msgid "Cache cleared"
+msgstr "Cache gelöscht"
 
 # GUI - Info
 msgctxt "#30401"

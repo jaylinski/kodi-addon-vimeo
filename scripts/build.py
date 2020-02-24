@@ -6,7 +6,7 @@ import shutil
 src_dir = "."
 build_dir = "build"
 addon_name = "plugin.video.vimeo"
-ignore = shutil.ignore_patterns(".*", "scripts", "tests", "venv", "Pipfile*")
+ignore = shutil.ignore_patterns(".*", "docs", "scripts", "tests", "venv", "Pipfile*")
 
 # Clean up
 if os.path.exists(build_dir):

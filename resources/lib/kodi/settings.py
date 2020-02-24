@@ -2,6 +2,7 @@ class Settings:
 
     VIDEO_FORMAT = {
         "HLS (Adaptive)": "hls:default",
+        "2160p": "progressive:2160p",
         "1080p": "progressive:1080p",
         "720p": "progressive:720p",
         "540p": "progressive:540p",

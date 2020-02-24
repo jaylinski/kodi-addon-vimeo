@@ -1,5 +1,4 @@
 from future import standard_library
-
 standard_library.install_aliases()  # noqa: E402
 
 import requests
@@ -143,7 +142,7 @@ class Api:
 
             for item in json_obj["data"]:
                 kind = item.get("type", None)
-                is_video = kind == "video" or kind == "clip"
+                is_video = kind == "video"
                 is_channel = "/channels/" in item.get("uri", "")
                 is_group = "/groups/" in item.get("uri", "")
                 is_user = item.get("account", False)
