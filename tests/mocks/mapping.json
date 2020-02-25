@@ -1,15 +1,23 @@
 [
     {
+        "url": "https://api.vimeo.com/categories?fields=uri%2Cresource_key%2Cname%2Ctop_level%2Cpictures.sizes.width%2Cpictures.sizes.link%2Cparent%2Csubcategories%2Cmetadata.interactions%2Cmetadata.connections.videos%2Cmetadata.connections.users%2Cicon.sizes.width%2Cicon.sizes.link&sort=last_video_featured_time&direction=desc",
+        "mock": "api_categories.json"
+    },
+    {
         "url": "https://api.vimeo.com/channels?page=1&per_page=3&query=sport",
-        "mock": "api_users_search.json"
+        "mock": "api_channels_search.json"
+    },
+    {
+        "url": "https://api.vimeo.com/groups?page=2&per_page=3&query=sport",
+        "mock": "api_groups_search.json"
     },
     {
         "url": "https://api.vimeo.com/users?page=1&per_page=3&query=sport",
         "mock": "api_users_search.json"
     },
     {
-        "url": "https://player.vimeo.com/video/338319342/config",
-        "mock": "api_video_config.json"
+        "url": "https://api.vimeo.com/channels/927/videos",
+        "mock": "api_videos_channel.json"
     },
     {
         "url": "https://api.vimeo.com/videos/352494023",
@@ -18,5 +26,26 @@
     {
         "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
         "mock": "api_videos_search.json"
+    },
+    {
+        "url": "https://api.vimeo.com/videos?query=The Pet Files&sort=relevant",
+        "mock": "api_videos_search_av1.json"
+    },
+    {
+        "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
+        "mock": "api_videos_search_fallback.json",
+        "info": "Fallback token used"
+    },
+    {
+        "url": "https://skyfire.vimeocdn.com/1579030205-0x5dfb8de5d66a27da961a539ebac026cba73e1a86/88127142/video/232277096/master.m3u8",
+        "mock": "hls_playlist.m3u8"
+    },
+    {
+        "url": "https://skyfire.vimeocdn.com/1579032759-0x79b8ea36358f101219cfbc7418f4122cfdb3e992/364985772/video/1615310088,1615121223,1614589843,1614490540,1614490537,1504051169,1504051164,1504051162,1504051159,1504051157/master.m3u8",
+        "mock": "hls_playlist_av1.m3u8"
+    },
+    {
+        "url": "https://player.vimeo.com/video/338319342/config",
+        "mock": "player_video_config.json"
     }
 ]
