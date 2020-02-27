@@ -12,6 +12,10 @@
         "mock": "api_groups_search.json"
     },
     {
+        "url": "https://api.vimeo.com/ondemand/pages/25096/videos/97663163",
+        "mock": "api_ondemand_video.json"
+    },
+    {
         "url": "https://api.vimeo.com/users?page=1&per_page=3&query=sport",
         "mock": "api_users_search.json"
     },
@@ -35,6 +39,10 @@
         "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
         "mock": "api_videos_search_fallback.json",
         "info": "Fallback token used"
+    },
+    {
+        "url": "https://api.vimeo.com/videos?query=iceland",
+        "mock": "api_videos_search_on_demand.json"
     },
     {
         "url": "https://skyfire.vimeocdn.com/1579030205-0x5dfb8de5d66a27da961a539ebac026cba73e1a86/88127142/video/232277096/master.m3u8",
