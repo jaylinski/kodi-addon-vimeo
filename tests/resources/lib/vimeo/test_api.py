@@ -81,6 +81,26 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[0].uri, "/videos/13101116")
         self.assertEqual(res.items[0].info["mediaUrlResolved"], False)
 
+    def test_search_videos_on_demand(self):
+        with open("./tests/mocks/api_videos_search_on_demand.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        self.api.video_stream = "HLS (Adaptive)"
+        res = self.api.search("foo", "videos")
+
+        self.assertEqual(res.items[0].uri, "https://player.vimeo.com/play/1546650582/hls")
+        self.assertEqual(res.items[0].info["mediaUrlResolved"], True)
+        self.assertEqual(res.items[0].info["onDemand"], False)
+
+        self.assertEqual(res.items[1].uri, "/ondemand/pages/25096/videos/97663163")
+        self.assertEqual(res.items[1].info["mediaUrlResolved"], False)
+        self.assertEqual(res.items[1].info["onDemand"], True)
+
+        self.assertEqual(res.items[2].uri, "https://player.vimeo.com/play/120186138/hls")
+        self.assertEqual(res.items[2].info["mediaUrlResolved"], True)
+        self.assertEqual(res.items[2].info["onDemand"], False)
+
     def test_search_users(self):
         with open("./tests/mocks/api_users_search.json") as f:
             mock_data = f.read()
@@ -166,11 +186,18 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[0].uri, "/videos/352494023")
 
     def test_resolve_media_url(self):
-        with open("./tests/mocks/player_video_config.json") as f:
-            mock_data = f.read()
-
         res = self.api.resolve_media_url("https://player.vimeo.com/play/1663612616/hls?123")
         self.assertEqual(res, "https://player.vimeo.com/play/1663612616/hls?123")
+
+    def test_resolve_media_url_on_demand(self):
+        with open("./tests/mocks/api_ondemand_video.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        self.api.video_stream = "HLS (Adaptive)"
+
+        res = self.api.resolve_media_url("/ondemand/pages/25096")
+        self.assertEqual(res, "https://player.vimeo.com/play/260864877/hls")
 
     def test_resolve_media_url_fallback(self):
         with open("./tests/mocks/player_video_config.json") as f:
