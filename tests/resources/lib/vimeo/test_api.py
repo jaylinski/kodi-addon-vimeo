@@ -101,6 +101,17 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[2].info["mediaUrlResolved"], True)
         self.assertEqual(res.items[2].info["onDemand"], False)
 
+    def test_search_videos_no_hls(self):
+        with open("./tests/mocks/api_videos_search_no_hls.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        self.api.video_stream = "HLS (Adaptive)"
+        res = self.api.search("foo", "videos")
+
+        self.assertEqual(res.items[0].label, "Zygote Balls at BIP, Florence, Italy")
+        self.assertEqual(res.items[0].uri, "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/54/0/270719/15090045.mp4")
+
     def test_search_users(self):
         with open("./tests/mocks/api_users_search.json") as f:
             mock_data = f.read()
