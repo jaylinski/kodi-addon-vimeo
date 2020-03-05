@@ -2,9 +2,9 @@ import json
 import sys
 from unittest import TestCase
 from unittest.mock import MagicMock, Mock
-sys.modules['xbmc'] = MagicMock()
-sys.modules['xbmcaddon'] = MagicMock()
-sys.modules['xbmcgui'] = MagicMock()
+sys.modules["xbmc"] = MagicMock()
+sys.modules["xbmcaddon"] = MagicMock()
+sys.modules["xbmcgui"] = MagicMock()
 from resources.lib.kodi.settings import Settings
 from resources.lib.vimeo.api import Api
 
