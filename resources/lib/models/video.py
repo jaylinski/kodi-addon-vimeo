@@ -32,7 +32,6 @@ class Video(ListItem):
         list_item.setInfo("video", {
             "artist": [self.info.get("user", "")],
             "duration": self.info.get("duration"),
-            "playcount": self.info.get("playcount"),
             "plot": self.info.get("description", ""),
             "title": self.label,
             "year": self.info.get("date")[:4],

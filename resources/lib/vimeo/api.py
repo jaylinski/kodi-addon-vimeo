@@ -175,7 +175,6 @@ class Api:
                         "description": item["description"],
                         "duration": item["duration"],
                         "picture": self._get_picture(item["pictures"], 4),
-                        "playcount": item["stats"].get("plays", 0),
                         "user": item["user"]["name"],
                         "userThumb": self._get_picture(item["user"]["pictures"], 3),
                         "mediaUrlResolved": contains_media_url,
