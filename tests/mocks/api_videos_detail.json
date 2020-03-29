@@ -3,43 +3,9 @@
     "name": "Beautiful Chaos",
     "description": "\"Chaos it said to be the opposite of order, and order, the basis for beauty. But that doesn’t mean that chaos can’t be beautiful too\"Joel Meyerowitz\n\nDirected by Fernando Livschitz\nwww.bsfilms.me\nwww.instagram.com/ferliv/\nwww.facebook.com/ferliv",
     "type": "video",
-    "link": "https://vimeo.com/352494023",
     "duration": 76,
-    "width": 3840,
-    "language": null,
-    "height": 2160,
-    "embed": {
-        "html": "<iframe src=\"https://player.vimeo.com/video/352494023?badge=0&autopause=0&player_id=0&app_id=148082\" width=\"3840\" height=\"2160\" frameborder=\"0\" title=\"Beautiful Chaos\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>",
-        "badges": {
-            "hdr": false,
-            "live": {
-                "streaming": false,
-                "archived": false
-            },
-            "staff_pick": {
-                "normal": true,
-                "best_of_the_month": false,
-                "best_of_the_year": false,
-                "premiere": false
-            },
-            "vod": false,
-            "weekend_challenge": false
-        }
-    },
     "created_time": "2019-08-07T14:20:43+00:00",
-    "modified_time": "2019-08-21T14:33:37+00:00",
     "release_time": "2019-08-07T14:20:43+00:00",
-    "content_rating": [
-        "safe"
-    ],
-    "license": null,
-    "privacy": {
-        "view": "anybody",
-        "embed": "public",
-        "download": true,
-        "add": true,
-        "comments": "anybody"
-    },
     "pictures": {
         "uri": "/videos/352494023/pictures/804395055",
         "active": true,
@@ -70,12 +36,6 @@
                 "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F804395055_640x360.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
             },
             {
-                "width": 960,
-                "height": 540,
-                "link": "https://i.vimeocdn.com/video/804395055_960x540.jpg?r=pad",
-                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F804395055_960x540.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
-            },
-            {
                 "width": 1280,
                 "height": 720,
                 "link": "https://i.vimeocdn.com/video/804395055_1280x720.jpg?r=pad",
@@ -88,119 +48,25 @@
                 "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F804395055_1920x1080.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
             },
             {
-                "width": 1280,
-                "height": 720,
-                "link": "https://i.vimeocdn.com/video/804395055_1280x720.jpg?r=pad",
-                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F804395055_1280x720.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+                "width": 960,
+                "height": 540,
+                "link": "https://i.vimeocdn.com/video/804395055_960x540.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F804395055_960x540.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
             }
         ],
         "resource_key": "9603ad79aaac42abe1cd6f51e2ec198716fee2ea"
     },
-    "tags": [
-        {
-            "uri": "/tags/amusementpark",
-            "name": "amusement park",
-            "tag": "amusement park",
-            "canonical": "amusementpark",
-            "metadata": {
-                "connections": {
-                    "videos": {
-                        "uri": "/tags/amusementpark/videos",
-                        "options": [
-                            "GET"
-                        ],
-                        "total": 1811
-                    }
-                }
-            },
-            "resource_key": "b94a91e158b2cfe0fa6f4b57a5a1c77b0f615c9d"
-        },
-        {
-            "uri": "/tags/newyork",
-            "name": "new york",
-            "tag": "new york",
-            "canonical": "newyork",
-            "metadata": {
-                "connections": {
-                    "videos": {
-                        "uri": "/tags/newyork/videos",
-                        "options": [
-                            "GET"
-                        ],
-                        "total": 135109
-                    }
-                }
-            },
-            "resource_key": "12f49ffa4ea1d31cb6699685d3ff9b75e258c798"
-        },
-        {
-            "uri": "/tags/rollercoaster",
-            "name": "Roller coaster",
-            "tag": "Roller coaster",
-            "canonical": "rollercoaster",
-            "metadata": {
-                "connections": {
-                    "videos": {
-                        "uri": "/tags/rollercoaster/videos",
-                        "options": [
-                            "GET"
-                        ],
-                        "total": 3957
-                    }
-                }
-            },
-            "resource_key": "839b365334c8fdb34d02dafbb4d045819109fb3a"
-        },
-        {
-            "uri": "/tags/vfx",
-            "name": "vfx",
-            "tag": "vfx",
-            "canonical": "vfx",
-            "metadata": {
-                "connections": {
-                    "videos": {
-                        "uri": "/tags/vfx/videos",
-                        "options": [
-                            "GET"
-                        ],
-                        "total": 147355
-                    }
-                }
-            },
-            "resource_key": "787d50a1441007682409e897a305cfe745192911"
-        },
-        {
-            "uri": "/tags/buenosaires",
-            "name": "buenos aires",
-            "tag": "buenos aires",
-            "canonical": "buenosaires",
-            "metadata": {
-                "connections": {
-                    "videos": {
-                        "uri": "/tags/buenosaires/videos",
-                        "options": [
-                            "GET"
-                        ],
-                        "total": 23101
-                    }
-                }
-            },
-            "resource_key": "798e0330c4d0343a3698fa50d9419fb328547217"
-        }
-    ],
     "stats": {
-        "plays": 21967
+        "plays": null
     },
-    "categories": [],
     "metadata": {
         "connections": {
             "comments": {
                 "uri": "/videos/352494023/comments",
                 "options": [
-                    "GET",
-                    "POST"
+                    "GET"
                 ],
-                "total": 26
+                "total": 37
             },
             "credits": {
                 "uri": "/videos/352494023/credits",
@@ -215,7 +81,7 @@
                 "options": [
                     "GET"
                 ],
-                "total": 417
+                "total": 1116
             },
             "pictures": {
                 "uri": "/videos/352494023/pictures",
@@ -233,66 +99,9 @@
                 ],
                 "total": 0
             },
-            "related": null,
-            "recommendations": {
-                "uri": "/videos/352494023/recommendations",
-                "options": [
-                    "GET"
-                ]
-            },
-            "albums": {
-                "uri": "/videos/352494023/albums",
-                "options": [
-                    "GET",
-                    "PATCH"
-                ],
-                "total": 3
-            },
-            "available_albums": {
-                "uri": "/videos/352494023/available_albums",
-                "options": [
-                    "GET"
-                ],
-                "total": 0
-            },
-            "available_channels": {
-                "uri": "/videos/352494023/available_channels",
-                "options": [
-                    "GET"
-                ],
-                "total": 0
-            },
-            "versions": {
-                "uri": "/videos/352494023/versions",
-                "options": [
-                    "GET"
-                ],
-                "total": 1,
-                "current_uri": "/videos/352494023/versions/248548562",
-                "resource_key": "1f7a23a8d55b85668ef915ca56eea5ddd3ed7c54"
-            }
+            "related": null
         },
         "interactions": {
-            "watchlater": {
-                "uri": "/users/3400243/watchlater/352494023",
-                "options": [
-                    "GET",
-                    "PUT",
-                    "DELETE"
-                ],
-                "added": false,
-                "added_time": null
-            },
-            "like": {
-                "uri": "/users/3400243/likes/352494023",
-                "options": [
-                    "GET",
-                    "PUT",
-                    "DELETE"
-                ],
-                "added": false,
-                "added_time": null
-            },
             "report": {
                 "uri": "/videos/352494023/report",
                 "options": [
@@ -315,6 +124,7 @@
         "name": "Black Sheep Films",
         "link": "https://vimeo.com/bsfilms",
         "location": "",
+        "gender": "m",
         "bio": null,
         "short_bio": "Film Director from Argentina, working all around the world. www.bsfilms.me",
         "created_time": "2010-06-16T16:26:57+00:00",
@@ -375,11 +185,18 @@
             {
                 "name": null,
                 "link": "https://www.bsfilms.me",
+                "type": "link",
                 "description": null
             }
         ],
         "metadata": {
             "connections": {
+                "activities": {
+                    "uri": "/users/4063790/activities",
+                    "options": [
+                        "GET"
+                    ]
+                },
                 "albums": {
                     "uri": "/users/4063790/albums",
                     "options": [
@@ -393,6 +210,13 @@
                         "GET"
                     ],
                     "total": 5
+                },
+                "categories": {
+                    "uri": "/users/4063790/categories",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 2
                 },
                 "channels": {
                     "uri": "/users/4063790/channels",
@@ -412,7 +236,7 @@
                     "options": [
                         "GET"
                     ],
-                    "total": 5731
+                    "total": 6090
                 },
                 "following": {
                     "uri": "/users/4063790/following",
@@ -426,7 +250,7 @@
                     "options": [
                         "GET"
                     ],
-                    "total": 286
+                    "total": 285
                 },
                 "likes": {
                     "uri": "/users/4063790/likes",
@@ -462,12 +286,19 @@
                     ],
                     "total": 16
                 },
+                "watchlater": {
+                    "uri": "/users/4063790/watchlater",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 12
+                },
                 "shared": {
                     "uri": "/users/4063790/shared/videos",
                     "options": [
                         "GET"
                     ],
-                    "total": 133
+                    "total": 136
                 },
                 "pictures": {
                     "uri": "/users/4063790/pictures",
@@ -477,63 +308,328 @@
                     ],
                     "total": 1
                 }
-            },
-            "interactions": {
-                "follow": {
-                    "added": false,
-                    "added_time": null,
-                    "uri": "/users/3400243/following/4063790",
-                    "options": [
-                        "GET",
-                        "PUT",
-                        "DELETE"
-                    ]
-                },
-                "block": {
-                    "uri": "/me/block/4063790",
-                    "options": [
-                        "PUT",
-                        "DELETE"
-                    ],
-                    "added": false,
-                    "added_time": null
-                },
-                "report": {
-                    "uri": "/users/4063790/report",
-                    "options": [
-                        "POST"
-                    ],
-                    "reason": [
-                        "inappropriate avatar",
-                        "spammy",
-                        "bad videos",
-                        "creepy",
-                        "not playing nice",
-                        "impersonation"
-                    ]
-                }
             }
         },
+        "location_details": {
+            "formatted_address": "",
+            "latitude": null,
+            "longitude": null,
+            "city": null,
+            "state": null,
+            "neighborhood": null,
+            "sub_locality": null,
+            "state_iso_code": null,
+            "country": null,
+            "country_iso_code": null
+        },
+        "skills": [],
+        "available_for_hire": true,
         "resource_key": "275f42c074418c49d2fe024851a403fcafd4f629",
-        "account": "pro"
+        "account": "pro",
+        "badge": {
+            "type": "pro",
+            "text": "PRO",
+            "alt_text": "Learn more about Vimeo PRO",
+            "url": "/pro"
+        },
+        "preferences": {
+            "videos": {
+                "privacy": null
+            }
+        }
     },
-    "app": {
-        "name": "Dropbox",
-        "uri": "/apps/20166"
+    "play": {
+        "progressive": [
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 2560,
+                "height": 1440,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446216704.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=lRBNzCGsHGnmnyfr1CFpI5ZR2Xw%3D",
+                "created_time": "2019-08-21T20:10:29+00:00",
+                "fps": 24,
+                "size": 71766283,
+                "md5": "a50a6dfb98fe1285edf97faa4f1800c1",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446216704",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 1280,
+                "height": 720,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446216702.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=GE3Seulsbz4V5Ts0nhkPdGVH%2BQQ%3D",
+                "created_time": "2019-08-21T20:10:29+00:00",
+                "fps": 24,
+                "size": 22499734,
+                "md5": "37e4dc84b1a22718b01dabe5444696b4",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446216702",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 3840,
+                "height": 2160,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446216701.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=GSV6OaKOjFh0JS7eZiE02wJ7VBs%3D",
+                "created_time": "2019-08-21T20:10:29+00:00",
+                "fps": 24,
+                "size": 115931061,
+                "md5": "d28aaecb14fe45d090d8a658731291c2",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446216701",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 640,
+                "height": 360,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446202911.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=OnrsAL2Xc8xy3q5eWGIITQmhc2M%3D",
+                "created_time": "2019-08-21T20:00:09+00:00",
+                "fps": 24,
+                "size": 4633598,
+                "md5": "07ea03e89b80c228fdc50eca44e03f42",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446202911",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 1920,
+                "height": 1080,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446202906.mp4",
+                "created_time": "2019-08-21T20:00:09+00:00",
+                "fps": 24,
+                "size": 36352691,
+                "md5": "b3e963e9f46ed2356d31105a80b6b6fd",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446202906",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 426,
+                "height": 240,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446202902.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=iBWJgFfdaDkH2P8%2Bi4v63kKBIdo%3D",
+                "created_time": "2019-08-21T20:00:09+00:00",
+                "fps": 24,
+                "size": 3166509,
+                "md5": "b136b0342e2cc6c2f67a307832c7c202",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446202902",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "AV1",
+                "width": 960,
+                "height": 540,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1446202901.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=wWltiZBMbumSXH0keui7XDvVd4Q%3D",
+                "created_time": "2019-08-21T20:00:09+00:00",
+                "fps": 24,
+                "size": 12273094,
+                "md5": "60287499a6fc1d1437c6ee148d5143af",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1446202901",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 3840,
+                "height": 2160,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794570.mp4",
+                "created_time": "2019-08-07T14:25:21+00:00",
+                "fps": 24,
+                "size": 193269109,
+                "md5": "530b516c94c434fb5218303e41c26e65",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794570",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 2560,
+                "height": 1440,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794562.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=x660HQXwm9ut6iFG83PH8V3VRKE%3D",
+                "created_time": "2019-08-07T14:25:21+00:00",
+                "fps": 24,
+                "size": 100850382,
+                "md5": "eeb42a9cee9d6c9d31a6793458e61331",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794562",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 1280,
+                "height": "720 made invalid for test",
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794545.mp4",
+                "created_time": "2019-08-07T14:25:20+00:00",
+                "fps": 24,
+                "size": 24965674,
+                "md5": "e8c61bf0e6a9e45eeb39c2e59e9dd1ad",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794545",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 1920,
+                "height": 1080,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794539.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=2FtnEL3dY0OqbK3DYgOcskgsXXY%3D",
+                "created_time": "2019-08-07T14:25:20+00:00",
+                "fps": 24,
+                "size": 47247167,
+                "md5": "5fffd7bd960450d60992138e55e27a14",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794539",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 960,
+                "height": 540,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794417.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=0IWqcv2PLmNPNMcgLbWUolsuCy8%3D",
+                "created_time": "2019-08-07T14:25:17+00:00",
+                "fps": 24,
+                "size": 15382541,
+                "md5": "e1cd331a924d648f7c46d37af6f87ed6",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794417",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 640,
+                "height": 360,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794413.mp4",
+                "created_time": "2019-08-07T14:25:17+00:00",
+                "fps": 24,
+                "size": 5818843,
+                "md5": "52ca528cc2ca74e422e7a519a8a04784",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794413",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 426,
+                "height": 240,
+                "link_expiration_time": "2020-03-30T00:04:34+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794410.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=YpH%2Fm36x6hrQdTvQR0bIxM9ZSTs%3D",
+                "created_time": "2019-08-07T14:25:17+00:00",
+                "fps": 24,
+                "size": 3388159,
+                "md5": "1d678298cd787ac5e3061a6b28a1ddfc",
+                "log": {
+                    "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/1430794410",
+                    "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                    "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+                }
+            }
+        ],
+        "hls": {
+            "link_expiration_time": "2020-03-29T23:04:34+00:00",
+            "link": "https://player.vimeo.com/play/1446216704/hls",
+            "log": {
+                "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/hls",
+                "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+            }
+        },
+        "dash": {
+            "link_expiration_time": "2020-03-29T23:04:34+00:00",
+            "link": "https://player.vimeo.com/play/1446216704,1446216702,1446216701,1446202911,1446202906,1446202902,1446202901,1430794593,1430794587,1430794583,1430794576,1430794570,1430794564,1430794562,1430794556,1430794552,1430794545,1430794539,1430794417,1430794413,1430794410/dash?s=352494023_1585523074_2285b7ca41b48b948e4b70646911e3d2&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&logging=false",
+            "log": {
+                "play_link": "https://api.vimeo.com/videos/352494023/stats/play/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c/dash",
+                "like_press_link": "https://api.vimeo.com/videos/352494023/stats/like_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "watchlater_press_link": "https://api.vimeo.com/videos/352494023/stats/watchlater_press/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "load_link": "https://api.vimeo.com/videos/352494023/stats/load/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c",
+                "exit_link": "https://api.vimeo.com/videos/352494023/stats/exit/ts/1585515874:e9e53d1cb14c650327f27c11d73833bd8101952c"
+            }
+        },
+        "status": "playable"
     },
-    "status": "available",
-    "resource_key": "8f891b7c2a5be39a753f65e3fc057b83652231c7",
-    "upload": {
-        "status": "complete",
-        "link": null,
-        "upload_link": null,
-        "complete_uri": null,
-        "form": null,
-        "approach": null,
-        "size": null,
-        "redirect_url": null
-    },
-    "transcode": {
-        "status": "complete"
-    }
+    "resource_key": "8f891b7c2a5be39a753f65e3fc057b83652231c7"
 }

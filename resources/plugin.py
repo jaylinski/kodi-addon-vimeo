@@ -2,13 +2,6 @@ from future import standard_library
 from future.utils import PY2
 standard_library.install_aliases()  # noqa: E402
 
-from resources.lib.vimeo.api import Api
-from resources.lib.kodi.cache import Cache
-from resources.lib.kodi.items import Items
-from resources.lib.kodi.search_history import SearchHistory
-from resources.lib.kodi.settings import Settings
-from resources.lib.kodi.vfs import VFS
-from resources.routes import *
 import os
 import sys
 import urllib.parse
@@ -16,6 +9,14 @@ import xbmc
 import xbmcaddon
 import xbmcgui
 import xbmcplugin
+
+from resources.lib.vimeo.api import Api
+from resources.lib.kodi.cache import Cache
+from resources.lib.kodi.items import Items
+from resources.lib.kodi.search_history import SearchHistory
+from resources.lib.kodi.settings import Settings
+from resources.lib.kodi.vfs import VFS
+from resources.routes import *
 
 addon = xbmcaddon.Addon()
 addon_id = addon.getAddonInfo("id")
