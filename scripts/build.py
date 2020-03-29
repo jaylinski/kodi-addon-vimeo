@@ -15,6 +15,6 @@ if os.path.exists(build_dir):
     shutil.rmtree(build_dir)
 
 # Copy files
-shutil.copytree(".", build_dir + "/" + addon_name, False, ignore)
+shutil.copytree(".", os.path.join(build_dir, addon_name), False, ignore)
 
 print("Build finished!")
