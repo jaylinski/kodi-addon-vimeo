@@ -1,10 +1,11 @@
 from future import standard_library
 standard_library.install_aliases()  # noqa: E402
 
-from resources.lib.models.list_item import ListItem
 import urllib.parse
 import xbmcaddon
 import xbmcgui
+
+from resources.lib.models.list_item import ListItem
 
 trailer = xbmcaddon.Addon().getLocalizedString(30902)
 
@@ -39,9 +40,6 @@ class Video(ListItem):
         list_item.setProperty("isPlayable", "true")
         list_item.setProperty("mediaUrl", self.uri)
 
-        if self.info.get("mediaUrlResolved"):
-            url = self.uri
-        else:
-            url = addon_base + "/play/?" + urllib.parse.urlencode({"uri": self.uri})
+        url = addon_base + "/play/?" + urllib.parse.urlencode({"uri": self.uri})
 
         return url, list_item, False
