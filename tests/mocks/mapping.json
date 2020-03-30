@@ -28,6 +28,10 @@
         "mock": "api_videos_detail.json"
     },
     {
+        "url": "https://api.vimeo.com/videos/352494023",
+        "mock": "api_videos_detail_live.json"
+    },
+    {
         "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
         "mock": "api_videos_search.json"
     },
@@ -39,6 +43,10 @@
         "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
         "mock": "api_videos_search_fallback.json",
         "info": "Fallback token used"
+    },
+    {
+        "url": "https://api.vimeo.com/videos?query=live&sort=relevant",
+        "mock": "api_videos_search_live.json"
     },
     {
         "url": "https://api.vimeo.com/videos?query=Zygote Balls at BIP&fields=uri,resource_key,name,description,type,duration,created_time,location,bio,stats,user,account,release_time,pictures,metadata,play",

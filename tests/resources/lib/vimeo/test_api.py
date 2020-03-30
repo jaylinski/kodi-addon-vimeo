@@ -36,6 +36,9 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[1].uri, "/videos/339780805")
         self.assertEqual(res.items[1].thumb, "https://i.vimeocdn.com/video/787910745_200x150.jpg?r=pad")
 
+        # The third item is not playable, so it should not be listed
+        self.assertEqual(len(res.items), 2)
+
     def test_search_videos_no_media_urls(self):
         with open("./tests/mocks/api_videos_search_fallback.json") as f:
             mock_data = f.read()
@@ -62,6 +65,20 @@ class ApiTestCase(TestCase):
 
         self.assertEqual(res.items[2].uri, "/videos/31158028")
         self.assertEqual(res.items[2].info["onDemand"], False)
+
+    def test_search_videos_live(self):
+        with open("./tests/mocks/api_videos_search_live.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        self.api.video_stream = "HLS (Adaptive)"
+        res = self.api.search("foo", "videos")
+
+        self.assertEqual(res.items[0].uri, "/videos/401626792")
+        self.assertEqual(res.items[0].info["live"], True)
+
+        self.assertEqual(res.items[1].uri, "/videos/76321431")
+        self.assertEqual(res.items[1].info["live"], False)
 
     def test_search_users(self):
         with open("./tests/mocks/api_users_search.json") as f:
@@ -168,6 +185,21 @@ class ApiTestCase(TestCase):
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/352494023")
         self.assertEqual(res, "https://player.vimeo.com/play/1446216704/hls")
+
+        with open("./tests/mocks/api_videos_detail_live.json") as f:
+            mock_data = f.read()
+
+        # Live stream (HLS)
+        self.api.video_stream = "HLS (Adaptive)"
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        res = self.api.resolve_media_url("/videos/401749070")
+        self.assertEqual(res, "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/hls")
+
+        # Live stream (HLS fallback)
+        self.api.video_stream = "720p"
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        res = self.api.resolve_media_url("/videos/401749070")
+        self.assertEqual(res, "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/hls")
 
     def test_resolve_media_url_on_demand(self):
         with open("./tests/mocks/api_ondemand_video.json") as f:

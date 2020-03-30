@@ -151,8 +151,13 @@ class Api:
         if "data" in json_obj:
 
             for item in json_obj["data"]:
+                if "play" in item and item.get("play").get("status", "") == "unavailable":
+                    # Don't show unavailable items (like scheduled live streams)
+                    continue
+
                 kind = item.get("type", None)
                 is_video = kind == "video"
+                is_live = kind == "live"
                 is_channel = "/channels/" in item.get("uri", "")
                 is_group = "/groups/" in item.get("uri", "")
                 is_user = item.get("account", False)
@@ -160,7 +165,7 @@ class Api:
                 # On-demand videos don't contain playable video links:
                 purchase_required = item.get("play", {}).get("status", "") == "purchase_required"
 
-                if is_video:
+                if is_video or is_live:
                     if purchase_required:
                         video_url = item["metadata"]["connections"]["trailer"]["uri"]
                     else:
@@ -177,6 +182,7 @@ class Api:
                         "user": item["user"]["name"],
                         "userThumb": self._get_picture(item["user"]["pictures"], 3),
                         "onDemand": purchase_required,
+                        "live": is_live,
                     }
                     collection.items.append(video)
 
@@ -235,6 +241,10 @@ class Api:
         if video_type == "hls" and video_files.get("hls") is not None:
             return video_files["hls"]["link"]
 
+        elif video_files.get("progressive") is None:
+            # We are probably dealing with a live stream, so we can't use the progressive format
+            return video_files["hls"]["link"]
+
         elif video_type == "progressive" or video_files.get("hls") is None:
             for video_file in video_files["progressive"]:
                 if self._video_matches(video_file, video_format):
@@ -288,7 +298,7 @@ class Api:
             # Avoid rate limiting:
             # https://developer.vimeo.com/guidelines/rate-limiting#avoid-rate-limiting
             "fields": "uri,resource_key,name,description,type,duration,created_time,location,"
-                      "bio,stats,user,account,release_time,pictures,metadata,play"
+                      "bio,stats,user,account,release_time,pictures,metadata,play,live.status"
         }
 
     @staticmethod

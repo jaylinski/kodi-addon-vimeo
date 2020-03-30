@@ -7,7 +7,8 @@ import xbmcgui
 
 from resources.lib.models.list_item import ListItem
 
-trailer = xbmcaddon.Addon().getLocalizedString(30902)
+live = xbmcaddon.Addon().getLocalizedString(30902)
+trailer = xbmcaddon.Addon().getLocalizedString(30903)
 
 
 class Video(ListItem):
@@ -16,9 +17,7 @@ class Video(ListItem):
     info = {}
 
     def to_list_item(self, addon, addon_base):
-        label_prefix = "[{}] ".format(trailer) if self.info.get("onDemand") else ""
-
-        list_item = xbmcgui.ListItem(label=(label_prefix + self.label))
+        list_item = xbmcgui.ListItem(label=(self._get_label_prefix() + self.label))
         list_item.setArt({
             "thumb": self.thumb,
             "poster": self.info.get("picture", ""),
@@ -43,3 +42,12 @@ class Video(ListItem):
         url = addon_base + "/play/?" + urllib.parse.urlencode({"uri": self.uri})
 
         return url, list_item, False
+
+    def _get_label_prefix(self):
+        if self.info.get("onDemand"):
+            return "[{}] ".format(trailer)
+
+        if self.info.get("live"):
+            return "[{}] ".format(live)
+
+        return ""
