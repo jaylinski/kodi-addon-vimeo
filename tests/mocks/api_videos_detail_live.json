@@ -1,0 +1,380 @@
+{
+    "uri": "/videos/401749070",
+    "name": "Vespers & Benediction: 6PM (CT)",
+    "description": null,
+    "type": "live",
+    "duration": 3411,
+    "created_time": "2020-03-29T00:04:21+00:00",
+    "release_time": "2020-03-29T00:04:21+00:00",
+    "pictures": {
+        "uri": null,
+        "active": false,
+        "type": "default",
+        "sizes": [
+            {
+                "width": 100,
+                "height": 75,
+                "link": "https://i.vimeocdn.com/video/default-live_100x75?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_100x75&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 200,
+                "height": 150,
+                "link": "https://i.vimeocdn.com/video/default-live_200x150?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_200x150&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 295,
+                "height": 166,
+                "link": "https://i.vimeocdn.com/video/default-live_295x166?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_295x166&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 640,
+                "height": 360,
+                "link": "https://i.vimeocdn.com/video/default-live_640x360?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_640x360&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1280,
+                "height": 720,
+                "link": "https://i.vimeocdn.com/video/default-live_1280x720?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_1280x720&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1920,
+                "height": 1080,
+                "link": "https://i.vimeocdn.com/video/default-live_1920x1080?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_1920x1080&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 640,
+                "height": 480,
+                "link": "https://i.vimeocdn.com/video/default-live_640x480?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_640x480&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 960,
+                "height": 720,
+                "link": "https://i.vimeocdn.com/video/default-live_960x720?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_960x720&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1280,
+                "height": 960,
+                "link": "https://i.vimeocdn.com/video/default-live_1280x960?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_1280x960&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1920,
+                "height": 1440,
+                "link": "https://i.vimeocdn.com/video/default-live_1920x1440?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2Fdefault-live_1920x1440&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            }
+        ],
+        "resource_key": "7a491d0e8cad256a8ac2fd6d207e647c1b034bad"
+    },
+    "stats": {
+        "plays": null
+    },
+    "metadata": {
+        "connections": {
+            "comments": {
+                "uri": "/videos/401749070/comments",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "credits": {
+                "uri": "/videos/401749070/credits",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 1
+            },
+            "likes": {
+                "uri": "/videos/401749070/likes",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "pictures": {
+                "uri": "/videos/401749070/pictures",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 0
+            },
+            "texttracks": {
+                "uri": "/videos/401749070/texttracks",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 0
+            },
+            "related": null,
+            "recommendations": {
+                "uri": "/videos/401749070/recommendations",
+                "options": [
+                    "GET"
+                ]
+            },
+            "live_stats": {
+                "uri": "/videos/401749070/stats/live",
+                "options": [
+                    "GET"
+                ]
+            }
+        },
+        "interactions": {
+            "report": {
+                "uri": "/videos/401749070/report",
+                "options": [
+                    "POST"
+                ],
+                "reason": [
+                    "pornographic",
+                    "harassment",
+                    "advertisement",
+                    "ripoff",
+                    "incorrect rating",
+                    "spam",
+                    "causes harm"
+                ]
+            }
+        }
+    },
+    "user": {
+        "uri": "/users/2508122",
+        "name": "Institute of Christ the King",
+        "link": "https://vimeo.com/institutechristking",
+        "location": "Chicago, IL, USA",
+        "gender": "o",
+        "bio": null,
+        "short_bio": null,
+        "created_time": "2009-10-21T18:01:29+00:00",
+        "pictures": {
+            "uri": "/users/2508122/pictures/37179650",
+            "active": true,
+            "type": "custom",
+            "sizes": [
+                {
+                    "width": 30,
+                    "height": 30,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_30x30"
+                },
+                {
+                    "width": 75,
+                    "height": 75,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_75x75"
+                },
+                {
+                    "width": 100,
+                    "height": 100,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_100x100"
+                },
+                {
+                    "width": 300,
+                    "height": 300,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_300x300"
+                },
+                {
+                    "width": 72,
+                    "height": 72,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_72x72"
+                },
+                {
+                    "width": 144,
+                    "height": 144,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_144x144"
+                },
+                {
+                    "width": 216,
+                    "height": 216,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_216x216"
+                },
+                {
+                    "width": 288,
+                    "height": 288,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_288x288"
+                },
+                {
+                    "width": 360,
+                    "height": 360,
+                    "link": "https://i.vimeocdn.com/portrait/37179650_360x360"
+                }
+            ],
+            "resource_key": "f915dbfc8e9e2f7d79b1a138d96c505a33f854f7"
+        },
+        "websites": [
+            {
+                "name": "Institute of Christ the King",
+                "link": "https://www.institute-christ-king.org/",
+                "type": "link",
+                "description": null
+            }
+        ],
+        "metadata": {
+            "connections": {
+                "albums": {
+                    "uri": "/users/2508122/albums",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 3
+                },
+                "appearances": {
+                    "uri": "/users/2508122/appearances",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "categories": {
+                    "uri": "/users/2508122/categories",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "channels": {
+                    "uri": "/users/2508122/channels",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "feed": {
+                    "uri": "/users/2508122/feed",
+                    "options": [
+                        "GET"
+                    ]
+                },
+                "followers": {
+                    "uri": "/users/2508122/followers",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 40
+                },
+                "following": {
+                    "uri": "/users/2508122/following",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "groups": {
+                    "uri": "/users/2508122/groups",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "likes": {
+                    "uri": "/users/2508122/likes",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "membership": {
+                    "uri": "/users/2508122/membership/",
+                    "options": [
+                        "PATCH"
+                    ]
+                },
+                "moderated_channels": {
+                    "uri": "/users/2508122/channels?filter=moderated",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                },
+                "portfolios": {
+                    "uri": "/users/2508122/portfolios",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "videos": {
+                    "uri": "/users/2508122/videos",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 51
+                },
+                "watchlater": {
+                    "uri": "/users/2508122/watchlater",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "shared": {
+                    "uri": "/users/2508122/shared/videos",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "pictures": {
+                    "uri": "/users/2508122/pictures",
+                    "options": [
+                        "GET",
+                        "POST"
+                    ],
+                    "total": 1
+                }
+            }
+        },
+        "location_details": {
+            "formatted_address": "Chicago, IL, USA",
+            "latitude": 41.87811279999999669598764739930629730224609375,
+            "longitude": -87.629798899999997274790075607597827911376953125,
+            "city": "Chicago",
+            "state": "Illinois",
+            "neighborhood": null,
+            "sub_locality": null,
+            "state_iso_code": "IL",
+            "country": "United States",
+            "country_iso_code": "US"
+        },
+        "skills": [],
+        "available_for_hire": false,
+        "resource_key": "17b0168681a313ba6a16809f33fc06811cef01a9",
+        "account": "live_premium",
+        "badge": {
+            "type": "live_premium",
+            "text": "Premium",
+            "alt_text": "Learn more about Vimeo Premium",
+            "url": "/live"
+        }
+    },
+    "play": {
+        "status": "playable",
+        "dash": {
+            "link_expiration_time": "2020-03-30T04:53:50+00:00",
+            "link": "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/dash_mvtime?s=401749070_1585544030_667de8badeb990ff13513d2623404676&loc=external&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.",
+            "log": "https://api.vimeo.com/videos/401749070/log/dash/1585526030/b41eb468ea82f156d1e51608c43e1c2d063dd4c3",
+            "live": {
+                "heartbeat": "https://api.vimeo.com/videos/401749070/heartbeat/dash/1585526030/b41eb468ea82f156d1e51608c43e1c2d063dd4c3"
+            }
+        },
+        "hls": {
+            "link_expiration_time": "2020-03-30T04:53:50+00:00",
+            "link": "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/hls",
+            "log": "https://api.vimeo.com/videos/401749070/log/hls/1585526030/8f9b2cedfd6da782e84116746063a867355a242c",
+            "live": {
+                "heartbeat": "https://api.vimeo.com/videos/401749070/heartbeat/hls/1585526030/8f9b2cedfd6da782e84116746063a867355a242c"
+            }
+        }
+    },
+    "resource_key": "b705128b7462738982ec0cce0bf8b4e5fc4e443a"
+}

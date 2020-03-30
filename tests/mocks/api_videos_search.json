@@ -1260,7 +1260,7 @@
                         "exit_link": "https://api.vimeo.com/videos/249646664/stats/exit/ts/1582495724:f60ce162abf531d7dd5d5152688df84d6d5b05d5"
                     }
                 },
-                "status": "playable"
+                "status": "unavailable"
             },
             "resource_key": "c9cfdb581e0d5e151d3e4bb387f301cca6575483"
         }
