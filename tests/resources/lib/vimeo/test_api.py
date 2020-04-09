@@ -3,7 +3,7 @@ import sys
 
 from unittest import TestCase
 from unittest.mock import MagicMock, Mock
-sys.modules["xbmc"] = MagicMock()
+sys.modules["xbmc"] = xbmcMock = MagicMock()
 sys.modules["xbmcaddon"] = MagicMock()
 sys.modules["xbmcgui"] = MagicMock()
 from resources.lib.kodi.settings import Settings
@@ -15,6 +15,7 @@ class ApiTestCase(TestCase):
     def setUp(self):
         self.api = Api(Settings(MagicMock()), "en", MagicMock(), MagicMock())
         self.api.api_cdn = "fastly_skyfire"
+        xbmcMock.getUserAgent = Mock(return_value="A User-Agent String")
 
     def test_search_videos(self):
         with open("./tests/mocks/api_videos_search.json") as f:
@@ -248,3 +249,14 @@ class ApiTestCase(TestCase):
         self.api._do_player_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/13101116")
         self.assertEqual(res, "https://skyfire.vimeocdn.com/av1")
+
+    def test_resolve_media_url_macos(self):
+        with open("./tests/mocks/api_videos_detail.json") as f:
+            mock_data = f.read()
+
+        xbmcMock.getUserAgent = Mock(return_value="A Mac OS X User Agent")
+
+        self.api.video_stream = "1080p"
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        res = self.api.resolve_media_url("/videos/123")
+        self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.0.11%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
