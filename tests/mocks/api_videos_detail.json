@@ -536,7 +536,7 @@
                 "width": 1920,
                 "height": 1080,
                 "link_expiration_time": "2020-03-30T00:04:34+00:00",
-                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794539.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1585526674&Signature=2FtnEL3dY0OqbK3DYgOcskgsXXY%3D",
+                "link": "http://a.b/c.mp4",
                 "created_time": "2019-08-07T14:25:20+00:00",
                 "fps": 24,
                 "size": 47247167,
