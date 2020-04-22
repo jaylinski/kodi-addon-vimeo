@@ -57,6 +57,10 @@
         "mock": "api_videos_search_on_demand.json"
     },
     {
+        "url": "https://api.vimeo.com/videos?per_page=3&filter=trending",
+        "mock": "api_videos_trending.json"
+    },
+    {
         "url": "https://skyfire.vimeocdn.com/1579030205-0x5dfb8de5d66a27da961a539ebac026cba73e1a86/88127142/video/232277096/master.m3u8",
         "mock": "hls_playlist.m3u8"
     },

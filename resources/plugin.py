@@ -55,6 +55,16 @@ def run():
         else:
             xbmc.log("Invalid root action", xbmc.LOGERROR)
 
+    elif path == PATH_CATEGORIES:
+        collection = listItems.from_collection(api.categories())
+        xbmcplugin.addDirectoryItems(handle, collection, len(collection))
+        xbmcplugin.endOfDirectory(handle)
+
+    elif path == PATH_TRENDING:
+        collection = listItems.from_collection(api.trending())
+        xbmcplugin.addDirectoryItems(handle, collection, len(collection))
+        xbmcplugin.endOfDirectory(handle)
+
     elif path == PATH_FEATURED:
         action = args.get("action", None)
         if action is None:

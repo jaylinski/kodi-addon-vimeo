@@ -144,6 +144,34 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[0].thumb, "https://i.vimeocdn.com/video/857679735_200x150.jpg?r=pad")
         self.assertEqual(res.items[0].uri, "/videos/392544832")
 
+    def test_categories(self):
+        with open("./tests/mocks/api_categories.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        res = self.api.categories()
+
+        self.assertEqual(res.items[0].label, "Animation")
+        self.assertEqual(res.items[0].thumb, "https://i.vimeocdn.com/video/858725975_640x360.jpg?r=pad")
+        self.assertEqual(res.items[0].uri, "/categories/animation/videos")
+
+        self.assertEqual(res.items[1].label, "Travel")
+        self.assertEqual(res.items[1].thumb, "https://i.vimeocdn.com/video/649307891_640x360.jpg?r=pad")
+        self.assertEqual(res.items[1].uri, "/categories/travel/videos")
+
+    def test_trending(self):
+        with open("./tests/mocks/api_videos_trending.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        res = self.api.categories()
+
+        self.assertEqual(res.items[0].label, "Feeling Love for Filmfest Dresden")
+        self.assertEqual(res.items[1].label, "Lecture: The Meeting with Nadav Kander")
+        self.assertEqual(res.items[2].label, "Stay Home")
+
     def test_resolve_id(self):
         with open("./tests/mocks/api_videos_detail.json") as f:
             mock_data = f.read()

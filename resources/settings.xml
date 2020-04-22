@@ -7,6 +7,7 @@
         <setting label="30011" type="lsep"/>
         <setting id="search.items.size" type="labelenum" label="30012" values="5|10|15|20|25|30|40|50" default="15"/>
         <setting id="search.history.size" type="labelenum" label="30013" values="0|5|10|15|20|30|50" default="10"/>
+        <setting id="search.sort" type="enum" label="30015" lvalues="300150|300151|300152|300153|300154|300155|300156" default="0"/>
         <setting id="search.template" type="text" label="30014" default="{}"/>
     </category>
     <category label="30051">
