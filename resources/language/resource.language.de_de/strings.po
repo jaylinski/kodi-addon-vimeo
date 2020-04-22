@@ -37,6 +37,38 @@ msgctxt "#30014"
 msgid "Template"
 msgstr ""
 
+msgctxt "#30015"
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgctxt "#300150"
+msgid "Relevance"
+msgstr "Relevanz"
+
+msgctxt "#300151"
+msgid "Popularity"
+msgstr "Beliebtheit"
+
+msgctxt "#300152"
+msgid "Most recent"
+msgstr "Neueste"
+
+msgctxt "#300153"
+msgid "Alphabetical A-Z"
+msgstr "Alphabetisch A-Z"
+
+msgctxt "#300154"
+msgid "Alphabetical Z-A"
+msgstr "Alphabetisch Z-A"
+
+msgctxt "#300155"
+msgid "Longest"
+msgstr "Am längsten"
+
+msgctxt "#300156"
+msgid "Shortest"
+msgstr "Am kürzesten"
+
 msgctxt "#30020"
 msgid "Video"
 msgstr ""
@@ -78,6 +110,14 @@ msgstr "Suche"
 msgctxt "#30102"
 msgid "Featured"
 msgstr "Featured"
+
+msgctxt "#30103"
+msgid "Trending"
+msgstr "Trending"
+
+msgctxt "#30104"
+msgid "Categories"
+msgstr "Kategorien"
 
 msgctxt "#30108"
 msgid "Settings"

@@ -27,6 +27,16 @@ class Items:
         url = self.addon_base + PATH_FEATURED
         items.append((url, list_item, True))
 
+        # Trending
+        list_item = xbmcgui.ListItem(label=self.addon.getLocalizedString(30103))
+        url = self.addon_base + PATH_TRENDING
+        items.append((url, list_item, True))
+
+        # Categories
+        list_item = xbmcgui.ListItem(label=self.addon.getLocalizedString(30104))
+        url = self.addon_base + PATH_CATEGORIES
+        items.append((url, list_item, True))
+
         # Settings
         list_item = xbmcgui.ListItem(label=self.addon.getLocalizedString(30108))
         url = self.addon_base + "/?action=settings"

@@ -8,6 +8,7 @@ import xbmc
 from .client import VimeoClient
 from .auth import GrantFailed
 from .api_collection import ApiCollection
+from resources.lib.models.category import Category
 from resources.lib.models.channel import Channel
 from resources.lib.models.group import Group
 from resources.lib.models.user import User
@@ -19,7 +20,9 @@ class Api:
 
     api_player = "https://player.vimeo.com"
     api_limit = 10
+    api_sort = None
     api_fallback = False
+    api_fallback_params = ["filter"]
 
     # Extracted from public Vimeo Android App
     # This is a special client ID which will return playable URLs
@@ -28,7 +31,7 @@ class Api:
                         "wdtIIvy0paa7kFN0asWp2ooNSdqaEdwVkBLqau7MJFe0tSWez7HOakg/8BKtYzDe"
 
     # Access token of registered API app
-    # Is used as a fallback if the client login request fails
+    # Is used for specific routes and as a fallback if the client login request fails
     api_access_token_default = "d284acb5ed7c011ec0d79f79e3479f8c"
     api_access_token_cache_duration = 720  # 12 hours
     api_access_token_cache_key = "api-access-token"
@@ -42,6 +45,7 @@ class Api:
         self.cache = cache
 
         self.api_limit = int(self.settings.get("search.items.size"))
+        self.api_sort = self.settings.SORT.get(self.settings.get("search.sort"), {})
         self.video_stream = self.settings.get("video.format")
         self.video_av1 = True if self.settings.get("video.codec.av1") == "true" else False
 
@@ -79,6 +83,10 @@ class Api:
             pass
 
         # Fallback
+        return self.api_client_fallback
+
+    @property
+    def api_client_fallback(self):
         self.api_fallback = True
         return VimeoClient(token=self.api_access_token_default)
 
@@ -98,6 +106,7 @@ class Api:
 
     def search(self, query, kind):
         params = self._get_default_params()
+        params.update(self.api_sort)
         params["query"] = self.search_template.format(query)
         res = self._do_api_request("/{kind}".format(kind=kind), params)
         return self._map_json_to_collection(res)
@@ -109,9 +118,19 @@ class Api:
         res = self._do_api_request("/channels/{id}/videos".format(id=channel_id), params)
         return self._map_json_to_collection(res)
 
-    def resolve_media_url(self, uri):
-        media_url = None
+    def categories(self):
+        params = {"fields": "uri,resource_key,name,pictures,metadata,subcategories"}
+        res = self._do_api_request("/categories", params)
+        return self._map_json_to_collection(res)
 
+    def trending(self):
+        params = self._get_default_params()
+        params["filter"] = "trending"
+        params["direction"] = "desc"
+        res = self._do_api_request("/videos", params)
+        return self._map_json_to_collection(res)
+
+    def resolve_media_url(self, uri):
         # If we have a on-demand URL, we need to fetch the trailer and return the uri
         if uri.startswith("/ondemand/"):
             xbmc.log("plugin.video.vimeo::Api() resolving on-demand", xbmc.LOGDEBUG)
@@ -139,6 +158,9 @@ class Api:
         return self._map_json_to_collection(res)
 
     def _do_api_request(self, path, params):
+        if self._request_requires_fallback(path, params):
+            return self.api_client_fallback.get(path, params=params).json()
+
         return self.api_client.get(path, params=params).json()
 
     def _do_player_request(self, uri):
@@ -164,6 +186,7 @@ class Api:
                 kind = item.get("type", None)
                 is_video = kind == "video"
                 is_live = kind == "live"
+                is_category = "/categories/" in item.get("uri", "")
                 is_channel = "/channels/" in item.get("uri", "")
                 is_group = "/groups/" in item.get("uri", "")
                 is_user = item.get("account", False)
@@ -191,6 +214,12 @@ class Api:
                         "live": is_live,
                     }
                     collection.items.append(video)
+
+                elif is_category:
+                    category = Category(id=item["resource_key"], label=item["name"])
+                    category.thumb = self._get_picture(item["pictures"], 3)
+                    category.uri = item["metadata"]["connections"]["videos"]["uri"]
+                    collection.items.append(category)
 
                 elif is_channel:
                     channel = Channel(id=item["resource_key"], label=item["name"])
@@ -306,6 +335,14 @@ class Api:
             "fields": "uri,resource_key,name,description,type,duration,created_time,location,"
                       "bio,stats,user,account,release_time,pictures,metadata,play,live.status"
         }
+
+    def _request_requires_fallback(self, path, params):
+        url = urllib.parse.urlparse(path)
+        for param in self.api_fallback_params:
+            if param in params or param in urllib.parse.parse_qs(url.query):
+                return True
+
+        return False
 
     @staticmethod
     def _append_user_agent(url):

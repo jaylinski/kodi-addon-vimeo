@@ -1,5 +1,7 @@
 PATH_ROOT = "/"
+PATH_CATEGORIES = "/categories/"
 PATH_FEATURED = "/featured/"
 PATH_PLAY = "/play/"
 PATH_SEARCH = "/search/"
 PATH_SETTINGS_CACHE_CLEAR = "/settings/cache/clear/"
+PATH_TRENDING = "/trending/"
