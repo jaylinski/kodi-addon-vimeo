@@ -1,0 +1,38 @@
+{
+    "total": 3,
+    "data": [
+        {
+            "uri": "/videos/503121159/texttracks/11718998",
+            "active": true,
+            "type": "captions",
+            "language": "en-US",
+            "link": "https://captions.cloud.vimeo.com/captions/11718998.vtt?expires=1612628747&sig=20bd633b1071e50f426fcd9e08f2aca665739029&download=Lead+Gen+Blog+Video+Subtitles_EN.srt.vtt",
+            "link_expires_time": 1612628747,
+            "hls_link": "https://captions.cloud.vimeo.com/captions/11718998.vtt?expires=1612628747&sig=20bd633b1071e50f426fcd9e08f2aca665739029&download=Lead+Gen+Blog+Video+Subtitles_EN.srt.vtt&hls=1",
+            "hls_link_expires_time": 1612628747,
+            "name": "Lead Gen Blog Video Subtitles_EN.srt"
+        },
+        {
+            "uri": "/videos/503121159/texttracks/11719013",
+            "active": true,
+            "type": "subtitles",
+            "language": "fr",
+            "link": "https://captions.cloud.vimeo.com/captions/11719013.vtt?expires=1612628747&sig=b127d0263b472aae9c374b19cbefb1b389b5674d&download=Lead+Gen+Blog+Video+Subtitles_fr-FR.srt.vtt",
+            "link_expires_time": 1612628747,
+            "hls_link": "https://captions.cloud.vimeo.com/captions/11719013.vtt?expires=1612628747&sig=b127d0263b472aae9c374b19cbefb1b389b5674d&download=Lead+Gen+Blog+Video+Subtitles_fr-FR.srt.vtt&hls=1",
+            "hls_link_expires_time": 1612628747,
+            "name": "Lead Gen Blog Video Subtitles_fr-FR.srt"
+        },
+        {
+            "uri": "/videos/503121159/texttracks/11719014",
+            "active": true,
+            "type": "subtitles",
+            "language": "pt-BR",
+            "link": "https://captions.cloud.vimeo.com/captions/11719014.vtt?expires=1612628747&sig=e8a79d565ba45443964eb656a6af326fdaf7e565&download=Lead+Gen+Blog+Video+Subtitles_pt-BR.srt.vtt",
+            "link_expires_time": 1612628747,
+            "hls_link": "https://captions.cloud.vimeo.com/captions/11719014.vtt?expires=1612628747&sig=e8a79d565ba45443964eb656a6af326fdaf7e565&download=Lead+Gen+Blog+Video+Subtitles_pt-BR.srt.vtt&hls=1",
+            "hls_link_expires_time": 1612628747,
+            "name": "Lead Gen Blog Video Subtitles_pt-BR.srt"
+        }
+    ]
+}

@@ -30,11 +30,13 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[0].label, "kodi James")
         self.assertEqual(res.items[0].info["user"], "Foo User")
         self.assertEqual(res.items[0].uri, "/videos/13101116")
+        self.assertEqual(res.items[0].hasSubtitles, False)
         self.assertEqual(res.items[0].thumb, "https://i.vimeocdn.com/video/74666133_200x150.jpg?r=pad")
 
         self.assertEqual(res.items[1].label, "Kodi Sings")
         self.assertEqual(res.items[1].info["user"], "Bar User")
         self.assertEqual(res.items[1].uri, "/videos/339780805")
+        self.assertEqual(res.items[1].hasSubtitles, False)
         self.assertEqual(res.items[1].thumb, "https://i.vimeocdn.com/video/787910745_200x150.jpg?r=pad")
 
         # The third item is not playable, so it should not be listed
@@ -213,6 +215,18 @@ class ApiTestCase(TestCase):
 
         self.assertRaises(PasswordRequiredException, self.api.resolve_id, "216913310")
 
+    def test_resolve_id_texttracks(self):
+        with open("./tests/mocks/api_videos_detail_texttracks.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        res = self.api.resolve_id("140786188")
+
+        self.assertEqual(res.items[0].label, "Impardonnable (English subtitle)")
+        self.assertEqual(res.items[0].uri, "/videos/140786188")
+        self.assertEqual(res.items[0].hasSubtitles, True)
+
     def test_resolve_media_url(self):
         with open("./tests/mocks/api_videos_detail.json") as f:
             mock_data = f.read()
@@ -317,3 +331,21 @@ class ApiTestCase(TestCase):
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/123")
         self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.0.11%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
+
+    def test_text_tracks(self):
+        with open("./tests/mocks/web.vtt") as f:
+            mock_data_webvtt = f.read()
+
+        with open("./tests/mocks/api_videos_texttracks.json") as f:
+            mock_data = f.read()
+
+        self.api._do_request = Mock(return_value=mock_data_webvtt)
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+        res = self.api.resolve_texttracks("/videos/12345/texttracks")
+
+        self.assertEqual(res[0]["uri"], "/videos/503121159/texttracks/11718998")
+        self.assertEqual(res[0]["language"], "en-US")
+        self.assertTrue(res[0]["srt"].startswith("1\n00:00:08,850 --> 00:00:10,350\nMy love.\n\n"))
+
+        self.assertEqual(res[1]["uri"], "/videos/503121159/texttracks/11719013")
+        self.assertEqual(res[1]["language"], "fr")

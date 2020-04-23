@@ -3,6 +3,7 @@
     <category label="30001">
         <setting label="30020" type="lsep"/>
         <setting id="video.format" type="labelenum" label="30021" values="360p|480p|540p|720p|1080p|2160p|HLS (Adaptive)" default="HLS (Adaptive)"/>
+        <setting id="video.subtitles" type="bool" label="30023" default="false"/>
         <setting id="video.codec.av1" type="bool" label="30022" default="false"/>
         <setting label="30011" type="lsep"/>
         <setting id="search.items.size" type="labelenum" label="30012" values="5|10|15|20|25|30|40|50" default="15"/>

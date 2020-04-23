@@ -81,6 +81,10 @@ msgctxt "#30022"
 msgid "AOMedia Video 1 (AV1)"
 msgstr ""
 
+msgctxt "#30023"
+msgid "Subtitles"
+msgstr ""
+
 # Settings - Advanced
 msgctxt "#30051"
 msgid "Advanced"
