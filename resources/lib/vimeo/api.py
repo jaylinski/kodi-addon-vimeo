@@ -8,6 +8,7 @@ import xbmc
 from .client import VimeoClient
 from .auth import GrantFailed
 from .api_collection import ApiCollection
+from .utils import webvtt_to_srt
 from resources.lib.models.category import Category
 from resources.lib.models.channel import Channel
 from resources.lib.models.group import Group
@@ -130,6 +131,13 @@ class Api:
         res = self._do_api_request("/videos", params)
         return self._map_json_to_collection(res)
 
+    def resolve_texttracks(self, uri):
+        res = self._do_api_request(uri, {})
+        subtitles = res.get("data")
+        for subtitle in subtitles:
+            subtitle["srt"] = webvtt_to_srt(self._do_request(subtitle["link"]))
+        return subtitles
+
     def resolve_media_url(self, uri, password=None):
         # If we have a on-demand URL, we need to fetch the trailer and return the uri
         if uri.startswith("/ondemand/"):
@@ -168,6 +176,9 @@ class Api:
     def _do_player_request(self, uri):
         headers = {"Accept-Encoding": "gzip"}
         return requests.get(self.api_player + uri + "/config", headers=headers).json()
+
+    def _do_request(self, uri):
+        return requests.get(uri).text
 
     def _map_json_to_collection(self, json_obj):
         collection = ApiCollection()
@@ -211,6 +222,7 @@ class Api:
                     video = Video(id=item["resource_key"], label=item["name"])
                     video.thumb = self._get_picture(item["pictures"])
                     video.uri = video_url
+                    video.hasSubtitles = item["metadata"]["connections"]["texttracks"]["total"] > 0
                     video.info = {
                         "date": item["release_time"],
                         "description": item["description"],

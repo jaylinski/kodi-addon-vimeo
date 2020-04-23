@@ -85,10 +85,16 @@ def run():
 
         # Private params
         media_url = args.get("uri", [None])[0]
+        texttracks = args.get("texttracks", [False])[0]
+
+        # Settings
+        fetch_subtitles = True if settings.get("video.subtitles") == "true" else False
 
         if media_url:
             resolved_url = api.resolve_media_url(media_url)
             item = xbmcgui.ListItem(path=resolved_url)
+            if fetch_subtitles and texttracks:
+                item = add_subtitles(item, texttracks)
             xbmcplugin.setResolvedUrl(handle, succeeded=True, listitem=item)
         elif video_id:
             try:
@@ -106,7 +112,7 @@ def run():
                     )
 
             playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-            resolve_list_item(handle, collection[0][1], password)
+            resolve_list_item(handle, collection[0][1], password, fetch_subtitles)
             playlist.add(url=collection[0][0], listitem=collection[0][1])
         else:
             xbmc.log("Invalid play param", xbmc.LOGERROR)
@@ -157,9 +163,12 @@ def run():
         xbmc.log("Path not found", xbmc.LOGERROR)
 
 
-def resolve_list_item(handle, list_item, password=None):
+def resolve_list_item(handle, list_item, password=None, fetch_subtitles=False):
     resolved_url = api.resolve_media_url(list_item.getProperty("mediaUrl"), password)
     list_item.setPath(resolved_url)
+    text_tracks = list_item.getProperty("textTracks")
+    if fetch_subtitles and text_tracks:
+        list_item = add_subtitles(list_item, text_tracks)
     xbmcplugin.setResolvedUrl(handle, succeeded=True, listitem=list_item)
 
 
@@ -169,3 +178,15 @@ def search(handle, query):
     xbmcplugin.addDirectoryItems(handle, search_options, len(collection))
     xbmcplugin.addDirectoryItems(handle, collection, len(collection))
     xbmcplugin.endOfDirectory(handle)
+
+
+def add_subtitles(item, texttracks_url):
+    subtitles = api.resolve_texttracks(texttracks_url)
+    paths = []
+    for subtitle in subtitles:
+        file_name = "texttrack.{}.srt".format(subtitle["language"])
+        vfs_cache.write(file_name, bytearray(subtitle["srt"], encoding="utf-8"))
+        paths.append("special://userdata/addon_data/{}/cache/{}".format(addon_id, file_name))
+        item.addStreamInfo("subtitle", {"language": subtitle["language"]})
+    item.setSubtitles(paths)
+    return item
