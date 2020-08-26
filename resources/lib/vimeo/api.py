@@ -172,7 +172,7 @@ class Api:
         collection.items = []  # Reset list in order to resolve problems in unit tests
         collection.next_href = json_obj.get("paging", {"next": None})["next"]
 
-        if "type" in json_obj and json_obj["type"] == "video":
+        if "type" in json_obj and json_obj["type"] in ("video", "live"):
             # If we are dealing with a single video, pack it into a dict
             json_obj = {"data": [json_obj]}
 
