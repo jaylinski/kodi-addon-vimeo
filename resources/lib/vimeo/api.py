@@ -130,7 +130,7 @@ class Api:
         res = self._do_api_request("/videos", params)
         return self._map_json_to_collection(res)
 
-    def resolve_media_url(self, uri):
+    def resolve_media_url(self, uri, password=None):
         # If we have a on-demand URL, we need to fetch the trailer and return the uri
         if uri.startswith("/ondemand/"):
             xbmc.log("plugin.video.vimeo::Api() resolving on-demand", xbmc.LOGDEBUG)
@@ -147,13 +147,15 @@ class Api:
         else:
             xbmc.log("plugin.video.vimeo::Api() resolving video uri", xbmc.LOGDEBUG)
             params = self._get_default_params()
+            params["password"] = password
             res = self._do_api_request(uri, params)
             media_url = self._extract_url_from_search_response(res["play"])
 
         return self._append_user_agent(media_url)
 
-    def resolve_id(self, video_id):
+    def resolve_id(self, video_id, password=None):
         params = self._get_default_params()
+        params["password"] = password
         res = self._do_api_request("/videos/{video_id}".format(video_id=video_id), params)
         return self._map_json_to_collection(res)
 
@@ -171,6 +173,12 @@ class Api:
         collection = ApiCollection()
         collection.items = []  # Reset list in order to resolve problems in unit tests
         collection.next_href = json_obj.get("paging", {"next": None})["next"]
+
+        if self._request_was_bad(json_obj) == 2223:
+            raise PasswordRequiredException()
+
+        if self._request_was_bad(json_obj) == 2222:
+            raise WrongPasswordException()
 
         if "type" in json_obj and json_obj["type"] in ("video", "live"):
             # If we are dealing with a single video, pack it into a dict
@@ -345,6 +353,15 @@ class Api:
         return False
 
     @staticmethod
+    def _request_was_bad(json_obj):
+        if "invalid_parameters" in json_obj and isinstance(json_obj["invalid_parameters"], list):
+            invalid_params = json_obj["invalid_parameters"]
+            if len(invalid_params) > 0 and "error_code" in invalid_params[0]:
+                return invalid_params[0]["error_code"]
+
+        return False
+
+    @staticmethod
     def _append_user_agent(url):
         """
         Kodi automatically uses a operating system based User-Agent for HTTP requests.
@@ -363,3 +380,11 @@ class Api:
             return data["sizes"][size]["link"]
         except IndexError:
             return data["sizes"][0]["link"]
+
+
+class PasswordRequiredException(Exception):
+    pass
+
+
+class WrongPasswordException(Exception):
+    pass

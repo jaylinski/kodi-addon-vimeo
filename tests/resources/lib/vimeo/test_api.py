@@ -7,7 +7,7 @@ sys.modules["xbmc"] = xbmcMock = MagicMock()
 sys.modules["xbmcaddon"] = MagicMock()
 sys.modules["xbmcgui"] = MagicMock()
 from resources.lib.kodi.settings import Settings
-from resources.lib.vimeo.api import Api
+from resources.lib.vimeo.api import Api, PasswordRequiredException
 
 
 class ApiTestCase(TestCase):
@@ -204,6 +204,14 @@ class ApiTestCase(TestCase):
 
         self.assertEqual(res.items[0].label, "An unlisted Vimeo Video")
         self.assertEqual(res.items[0].uri, "/videos/355062058:5293454954")
+
+    def test_resolve_id_password_protected(self):
+        with open("./tests/mocks/api_videos_detail_invalid_params.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        self.assertRaises(PasswordRequiredException, self.api.resolve_id, "216913310")
 
     def test_resolve_media_url(self):
         with open("./tests/mocks/api_videos_detail.json") as f:

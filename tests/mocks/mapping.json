@@ -28,6 +28,10 @@
         "mock": "api_videos_detail.json"
     },
     {
+        "url": "https://api.vimeo.com/videos/216913310",
+        "mock": "api_videos_invalid_params.json"
+    },
+    {
         "url": "https://api.vimeo.com/videos/352494023",
         "mock": "api_videos_detail_live.json"
     },
