@@ -32,6 +32,10 @@
         "mock": "api_videos_detail_live.json"
     },
     {
+        "url": "https://api.vimeo.com/videos/355062058:5293454954",
+        "mock": "api_videos_detail_unlisted.json"
+    },
+    {
         "url": "https://api.vimeo.com/videos?query=kodi&sort=relevant",
         "mock": "api_videos_search.json"
     },

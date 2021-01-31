@@ -1,0 +1,450 @@
+{
+    "uri": "/videos/355062058:5293454954",
+    "name": "An unlisted Vimeo Video",
+    "description": "A description",
+    "type": "video",
+    "duration": 1771,
+    "created_time": "2019-08-21T09:40:55+00:00",
+    "release_time": "2019-08-21T09:40:55+00:00",
+    "pictures": {
+        "uri": "/videos/355062058:5293454954/pictures/807750519",
+        "active": true,
+        "type": "custom",
+        "sizes": [
+            {
+                "width": 100,
+                "height": 75,
+                "link": "https://i.vimeocdn.com/video/807750519_100x75.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_100x75.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 200,
+                "height": 150,
+                "link": "https://i.vimeocdn.com/video/807750519_200x150.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_200x150.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 295,
+                "height": 166,
+                "link": "https://i.vimeocdn.com/video/807750519_295x166.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_295x166.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 640,
+                "height": 360,
+                "link": "https://i.vimeocdn.com/video/807750519_640x360.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_640x360.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 960,
+                "height": 540,
+                "link": "https://i.vimeocdn.com/video/807750519_960x540.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_960x540.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1280,
+                "height": 720,
+                "link": "https://i.vimeocdn.com/video/807750519_1280x720.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_1280x720.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            },
+            {
+                "width": 1920,
+                "height": 1080,
+                "link": "https://i.vimeocdn.com/video/807750519_1920x1080.jpg?r=pad",
+                "link_with_play_button": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F807750519_1920x1080.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+            }
+        ],
+        "resource_key": "0446a1de79d66db306e661c7ec471815951f1490",
+        "default_picture": false
+    },
+    "stats": {
+        "plays": null
+    },
+    "metadata": {
+        "connections": {
+            "comments": {
+                "uri": "/videos/355062058:5293454954/comments",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "credits": null,
+            "likes": {
+                "uri": "/videos/355062058:5293454954/likes",
+                "options": [
+                    "GET"
+                ],
+                "total": 1
+            },
+            "pictures": {
+                "uri": "/videos/355062058:5293454954/pictures",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 1
+            },
+            "publish_to_social": {
+                "uri": "/videos/355062058/publish_to_social",
+                "options": []
+            },
+            "texttracks": {
+                "uri": "/videos/355062058:5293454954/texttracks",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 0
+            },
+            "related": null,
+            "recommendations": null
+        },
+        "interactions": {
+            "report": {
+                "uri": "/videos/355062058/report",
+                "options": [
+                    "POST"
+                ],
+                "reason": [
+                    "pornographic",
+                    "harassment",
+                    "ripoff",
+                    "incorrect rating",
+                    "spam",
+                    "causes harm",
+                    "csam"
+                ]
+            }
+        }
+    },
+    "user": {
+        "uri": "/users/45525802",
+        "name": "NZZ Format",
+        "link": "https://vimeo.com/nzzformat",
+        "location": "Zürich",
+        "gender": "n",
+        "bio": "Fernsehen von Format! NZZ Format ist «Neue Zürcher Zeitung» zum Anschauen: Geballtes Wissen wird zu gebündelter Information, spannend erzählt und visuell ästhetisch umgesetzt. Thematisch am Puls der Zeit, journalistisch relevante Themen vertieft in 30 Minuten. Aus dem internationalen Weltgeschehen, Gesellschaftspolitik & Wissenschaft, von A wie Asylpolitik und Alzheimer bis zu Z wie Zucker und Zivilcourage. Seit 25 Jahren und 800 Sendungen ist NZZ Format fixer Bestandteil der deutschsprachigen Fernsehlandschaft. Unsere Sendetermine: Donnerstag, 23.00 auf SRF 1, Sonntag, 19.10 Uhr auf 3sat.\n\nWer wir sind:\n\nEin Team aus festen und freien Journalisten und Filmemachern. Aufmerksame Beobachter und kritische Geister. Wir sind über den Globus verstreut und erzählen Geschichten aus internationaler Perspektive. Wir möchten Emotionen wecken, Wissen vermitteln und Verständnis schaffen. Wir sind “Überzeugungstäter”, die dafür brennen, was sie tun. Wir mögen Fakten, respektieren Meinungen und versuchen, neue Perspektiven einzunehmen. \n\nNZZ Format sendet auf SRF1 im Rahmen der Konzession von PresseTV und produziert alle Sendungen in eigener Regie.",
+        "short_bio": "Fernsehen von Format mit Dokumentationen und Reportagen aus Eigenproduktion. Donnerstag, 23.05 auf SRF 1, Sonntag, 19.10 Uhr auf 3sat.",
+        "created_time": "2015-11-05T10:58:32+00:00",
+        "pictures": {
+            "uri": "/users/45525802/pictures/29889121",
+            "active": true,
+            "type": "custom",
+            "sizes": [
+                {
+                    "width": 30,
+                    "height": 30,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_30x30"
+                },
+                {
+                    "width": 72,
+                    "height": 72,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_72x72"
+                },
+                {
+                    "width": 75,
+                    "height": 75,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_75x75"
+                },
+                {
+                    "width": 100,
+                    "height": 100,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_100x100"
+                },
+                {
+                    "width": 144,
+                    "height": 144,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_144x144"
+                },
+                {
+                    "width": 216,
+                    "height": 216,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_216x216"
+                },
+                {
+                    "width": 288,
+                    "height": 288,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_288x288"
+                },
+                {
+                    "width": 300,
+                    "height": 300,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_300x300"
+                },
+                {
+                    "width": 360,
+                    "height": 360,
+                    "link": "https://i.vimeocdn.com/portrait/29889121_360x360"
+                }
+            ],
+            "resource_key": "c6c6afbc4faaabbbc30e0b5cf931cba3be9f413b",
+            "default_picture": false
+        },
+        "websites": [
+            {
+                "uri": "/users/45525802/links/6125786",
+                "name": "NZZ Format",
+                "link": "http://www.nzzformat.ch",
+                "type": "link",
+                "description": null
+            },
+            {
+                "uri": "/users/45525802/links/6125787",
+                "name": "NZZ TV",
+                "link": "http://www.nzz.ch/video/",
+                "type": "link",
+                "description": null
+            },
+            {
+                "uri": "/users/45525802/links/6125788",
+                "name": "NZZ Format auf Facebook",
+                "link": "https://www.facebook.com/search/top/?q=NZZ%20Format",
+                "type": "facebook",
+                "description": null
+            }
+        ],
+        "metadata": {
+            "connections": {
+                "albums": {
+                    "uri": "/users/45525802/albums",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 2
+                },
+                "appearances": {
+                    "uri": "/users/45525802/appearances",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "categories": {
+                    "uri": "/users/45525802/categories",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "channels": {
+                    "uri": "/users/45525802/channels",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                },
+                "feed": {
+                    "uri": "/users/45525802/feed",
+                    "options": [
+                        "GET"
+                    ]
+                },
+                "followers": {
+                    "uri": "/users/45525802/followers",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 48
+                },
+                "following": {
+                    "uri": "/users/45525802/following",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 2
+                },
+                "groups": {
+                    "uri": "/users/45525802/groups",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "likes": {
+                    "uri": "/users/45525802/likes",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 2
+                },
+                "membership": {
+                    "uri": "/users/45525802/membership/",
+                    "options": [
+                        "PATCH"
+                    ]
+                },
+                "moderated_channels": {
+                    "uri": "/users/45525802/channels?filter=moderated",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                },
+                "portfolios": {
+                    "uri": "/users/45525802/portfolios",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "videos": {
+                    "uri": "/users/45525802/videos",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 460
+                },
+                "watchlater": {
+                    "uri": "/users/45525802/watchlater",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                },
+                "shared": {
+                    "uri": "/users/45525802/shared/videos",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "pictures": {
+                    "uri": "/users/45525802/pictures",
+                    "options": [
+                        "GET",
+                        "POST"
+                    ],
+                    "total": 1
+                },
+                "folders_root": {
+                    "uri": "/users/45525802/folders/root",
+                    "options": [
+                        "GET"
+                    ]
+                },
+                "team_members": {
+                    "uri": "/users/45525802/teammembers",
+                    "options": [
+                        "GET",
+                        "POST"
+                    ],
+                    "total": 0,
+                    "invites_remaining": 10,
+                    "max_seats": 10
+                },
+                "teams": {
+                    "uri": "/users/45525802/teams",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                }
+            }
+        },
+        "location_details": {
+            "formatted_address": "Zürich",
+            "latitude": null,
+            "longitude": null,
+            "city": null,
+            "state": null,
+            "neighborhood": null,
+            "sub_locality": null,
+            "state_iso_code": null,
+            "country": null,
+            "country_iso_code": null
+        },
+        "skills": [],
+        "available_for_hire": false,
+        "can_work_remotely": false,
+        "resource_key": "621e4bd306f645ab1f38ea4d9ae98a4304bc466a",
+        "account": "business",
+        "badge": {
+            "type": "business",
+            "text": "Business",
+            "alt_text": "Learn more about Vimeo Business",
+            "url": "/business"
+        }
+    },
+    "play": {
+        "progressive": [
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 1280,
+                "height": 720,
+                "link_expiration_time": "2021-01-31T20:50:48+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/1012/14/355062058/1445505325.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1612126248&Signature=UvyE17eR2%2FPHb59X3Hh6nmBbekc%3D",
+                "created_time": "2019-08-21T09:44:04+00:00",
+                "fps": 25,
+                "size": 504176050,
+                "md5": "363efd28c1ba639c5a870f1bd2fe3172",
+                "log": "https://api.vimeo.com/videos/355062058:5293454954/log/1445505325/1612115448/7a75725af5d33376446ed03326c628d6bc5d8d43"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 640,
+                "height": 360,
+                "link_expiration_time": "2021-01-31T20:50:48+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/1012/14/355062058/1445505180.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1612126248&Signature=%2ByiIbkWVNa0gldj9NGAQn1TytUI%3D",
+                "created_time": "2019-08-21T09:44:01+00:00",
+                "fps": 25,
+                "size": 132900044,
+                "md5": "f10222e686831c859cfc75e16cb3b5cb",
+                "log": "https://api.vimeo.com/videos/355062058:5293454954/log/1445505180/1612115448/210501a0fb59c415e76071ef8f4fedf907819cb3"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 960,
+                "height": 540,
+                "link_expiration_time": "2021-01-31T20:50:48+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/1012/14/355062058/1445505176.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1612126248&Signature=RVa75dmFKz26r9Mw2a0lvuk5f3s%3D",
+                "created_time": "2019-08-21T09:44:01+00:00",
+                "fps": 25,
+                "size": 317246730,
+                "md5": "fce9cdfbd5b89bc51b19a08ab3834384",
+                "log": "https://api.vimeo.com/videos/355062058:5293454954/log/1445505176/1612115448/8eebdd128ea00b824c80824ab48f4954d77e873b"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 1920,
+                "height": 1080,
+                "link_expiration_time": "2021-01-31T20:50:48+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/1012/14/355062058/1445505174.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1612126248&Signature=90iMNn8wyhUpy1flxMT1xZ0JSU8%3D",
+                "created_time": "2019-08-21T09:44:01+00:00",
+                "fps": 25,
+                "size": 1076419802,
+                "md5": "bff735d49d1273a2f0c961e14f53e58b",
+                "log": "https://api.vimeo.com/videos/355062058:5293454954/log/1445505174/1612115448/07364dd16b0d5800a3b1ccaceee0b91f2587cefd"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 426,
+                "height": 240,
+                "link_expiration_time": "2021-01-31T20:50:48+00:00",
+                "link": "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/1012/14/355062058/1445505171.mp4?GoogleAccessId=GOOGLW2TRT7BCCZZO5AX&Expires=1612126248&Signature=DXejGLI9GOM507j9%2BlYm2BsIjAk%3D",
+                "created_time": "2019-08-21T09:44:01+00:00",
+                "fps": 25,
+                "size": 74296426,
+                "md5": "a817c80b4851707aaea8129e48593676",
+                "log": "https://api.vimeo.com/videos/355062058:5293454954/log/1445505171/1612115448/96d3e629f066c3ab0981907297f03db84d4c71cc"
+            }
+        ],
+        "hls": {
+            "link_expiration_time": "2021-01-31T19:50:48+00:00",
+            "link": "https://player.vimeo.com/play/bd250f9a-b62f-4f5e-abb9-dfcc7e65439e/hls?s=355062058_1612122648_32d0b4c8765285eb6d65759468536381&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&logging=false",
+            "log": "https://api.vimeo.com/videos/355062058:5293454954/log/hls/1612115448/39765b2b94a2666e8a50c1febd8bd49e85012dd4"
+        },
+        "dash": {
+            "link_expiration_time": "2021-01-31T19:50:48+00:00",
+            "link": "https://player.vimeo.com/play/bd250f9a-b62f-4f5e-abb9-dfcc7e65439e/dash?s=355062058_1612122648_32d0b4c8765285eb6d65759468536381&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&logging=false",
+            "log": "https://api.vimeo.com/videos/355062058:5293454954/log/dash/1612115448/b2c5a69460e06fd30b2a090952a861d490970711"
+        },
+        "status": "playable"
+    },
+    "resource_key": "2827bd0920b7ba34d2224580b7a939243d2d7350"
+}

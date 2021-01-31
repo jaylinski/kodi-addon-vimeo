@@ -195,6 +195,16 @@ class ApiTestCase(TestCase):
         self.assertEqual(res.items[0].thumb, "https://i.vimeocdn.com/video/default-live_200x150?r=pad")
         self.assertEqual(res.items[0].uri, "/videos/401749070")
 
+        with open("./tests/mocks/api_videos_detail_unlisted.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        res = self.api.resolve_id("355062058:5293454954")
+
+        self.assertEqual(res.items[0].label, "An unlisted Vimeo Video")
+        self.assertEqual(res.items[0].uri, "/videos/355062058:5293454954")
+
     def test_resolve_media_url(self):
         with open("./tests/mocks/api_videos_detail.json") as f:
             mock_data = f.read()
