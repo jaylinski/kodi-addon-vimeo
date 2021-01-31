@@ -10,7 +10,7 @@ import xbmcaddon
 import xbmcgui
 import xbmcplugin
 
-from resources.lib.vimeo.api import Api
+from resources.lib.vimeo.api import Api, PasswordRequiredException, WrongPasswordException
 from resources.lib.kodi.cache import Cache
 from resources.lib.kodi.items import Items
 from resources.lib.kodi.search_history import SearchHistory
@@ -91,9 +91,22 @@ def run():
             item = xbmcgui.ListItem(path=resolved_url)
             xbmcplugin.setResolvedUrl(handle, succeeded=True, listitem=item)
         elif video_id:
-            collection = listItems.from_collection(api.resolve_id(video_id))
+            try:
+                password = None
+                collection = listItems.from_collection(api.resolve_id(video_id, password))
+            except PasswordRequiredException:
+                try:
+                    password = xbmcgui.Dialog().input(addon.getLocalizedString(30904))
+                    collection = listItems.from_collection(api.resolve_id(video_id, password))
+                except WrongPasswordException:
+                    return xbmcgui.Dialog().notification(
+                        addon.getLocalizedString(30905),
+                        addon.getLocalizedString(30906),
+                        xbmcgui.NOTIFICATION_ERROR
+                    )
+
             playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-            resolve_list_item(handle, collection[0][1])
+            resolve_list_item(handle, collection[0][1], password)
             playlist.add(url=collection[0][0], listitem=collection[0][1])
         else:
             xbmc.log("Invalid play param", xbmc.LOGERROR)
@@ -144,8 +157,8 @@ def run():
         xbmc.log("Path not found", xbmc.LOGERROR)
 
 
-def resolve_list_item(handle, list_item):
-    resolved_url = api.resolve_media_url(list_item.getProperty("mediaUrl"))
+def resolve_list_item(handle, list_item, password=None):
+    resolved_url = api.resolve_media_url(list_item.getProperty("mediaUrl"), password)
     list_item.setPath(resolved_url)
     xbmcplugin.setResolvedUrl(handle, succeeded=True, listitem=list_item)
 

@@ -1,0 +1,14 @@
+{
+    "invalid_parameters": [
+        {
+            "field": "password",
+            "error_code": 2223,
+            "error": "Whoops! Please enter a password.",
+            "developer_message": "Password not provided for a password protected video."
+        }
+    ],
+    "error": "You have provided an invalid parameter. Please contact developer of this application.",
+    "link": null,
+    "developer_message": "The parameters passed to this API endpoint didn't pass Vimeo's validation. Please check the invalid_parameters list for more information.",
+    "error_code": 2204
+}

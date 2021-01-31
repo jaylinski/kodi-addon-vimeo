@@ -191,3 +191,15 @@ msgstr ""
 msgctxt "#30903"
 msgid "Trailer"
 msgstr ""
+
+msgctxt "#30904"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30905"
+msgid "Invalid password"
+msgstr ""
+
+msgctxt "#30906"
+msgid "Whoops! That password is invalid"
+msgstr ""
