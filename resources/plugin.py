@@ -53,7 +53,7 @@ def run():
         elif "settings" in action:
             addon.openSettings()
         else:
-            xbmc.log("Invalid root action", xbmc.LOGERROR)
+            xbmc.log(addon_id + ": Invalid root action", xbmc.LOGERROR)
 
     elif path == PATH_CATEGORIES:
         collection = listItems.from_collection(api.categories())
@@ -77,7 +77,7 @@ def run():
             xbmcplugin.addDirectoryItems(handle, collection, len(collection))
             xbmcplugin.endOfDirectory(handle)
         else:
-            xbmc.log("Invalid featured action", xbmc.LOGERROR)
+            xbmc.log(addon_id + ": Invalid featured action", xbmc.LOGERROR)
 
     elif path == PATH_PLAY:
         # Public params
@@ -115,11 +115,19 @@ def run():
             resolve_list_item(handle, collection[0][1], password, fetch_subtitles)
             playlist.add(url=collection[0][0], listitem=collection[0][1])
         else:
-            xbmc.log("Invalid play param", xbmc.LOGERROR)
+            xbmc.log(addon_id + ": Invalid play param", xbmc.LOGERROR)
 
     elif path == PATH_SEARCH:
         action = args.get("action", None)
         query = args.get("query", [""])[0]
+
+        if action and "remove" in action:
+            search_history.remove(query)
+            xbmc.executebuiltin("Container.Refresh")
+        elif action and "clear" in action:
+            search_history.clear()
+            xbmc.executebuiltin("Container.Refresh")
+
         if query:
             if action is None:
                 search(handle, query)
@@ -139,7 +147,7 @@ def run():
                 xbmcplugin.addDirectoryItems(handle, collection, len(collection))
                 xbmcplugin.endOfDirectory(handle)
             else:
-                xbmc.log("Invalid search action", xbmc.LOGERROR)
+                xbmc.log(addon_id + ": Invalid search action", xbmc.LOGERROR)
         else:
             if action is None:
                 # Search root
@@ -152,7 +160,7 @@ def run():
                 search_history.add(query)
                 search(handle, query)
             else:
-                xbmc.log("Invalid search action", xbmc.LOGERROR)
+                xbmc.log(addon_id + ": Invalid search action", xbmc.LOGERROR)
 
     elif path == PATH_SETTINGS_CACHE_CLEAR:
         vfs_cache.destroy()
@@ -160,7 +168,7 @@ def run():
         dialog.ok("Vimeo", addon.getLocalizedString(30501))
 
     else:
-        xbmc.log("Path not found", xbmc.LOGERROR)
+        xbmc.log(addon_id + ": Path not found", xbmc.LOGERROR)
 
 
 def resolve_list_item(handle, list_item, password=None, fetch_subtitles=False):
