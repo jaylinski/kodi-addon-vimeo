@@ -10,11 +10,12 @@ import xbmcaddon
 import xbmcgui
 import xbmcplugin
 
-from resources.lib.vimeo.api import Api, PasswordRequiredException, WrongPasswordException
+from resources.lib.api import Api, PasswordRequiredException, WrongPasswordException
 from resources.lib.kodi.cache import Cache
 from resources.lib.kodi.items import Items
 from resources.lib.kodi.search_history import SearchHistory
 from resources.lib.kodi.settings import Settings
+from resources.lib.kodi.utils import format_bold
 from resources.lib.kodi.vfs import VFS
 from resources.routes import *
 
@@ -30,7 +31,7 @@ settings = Settings(addon)
 cache = Cache(settings, vfs_cache)
 api = Api(settings, xbmc.getLanguage(xbmc.ISO_639_1), vfs, cache)
 search_history = SearchHistory(settings, vfs)
-listItems = Items(addon, addon_base, search_history)
+listItems = Items(addon, addon_base, settings, search_history, vfs)
 
 
 def run():
@@ -162,10 +163,50 @@ def run():
             else:
                 xbmc.log(addon_id + ": Invalid search action", xbmc.LOGERROR)
 
+    elif path == PATH_AUTH_LOGIN:
+        logout()  # Make sure there is no cached access-token
+
+        device_code_response = api.oauth_device()
+        activate_link = device_code_response["activate_link"]
+        device_code = device_code_response["device_code"]
+        user_code = device_code_response["user_code"]
+        xbmcgui.Dialog().ok(
+            heading=addon.getLocalizedString(30151),
+            line1=addon.getLocalizedString(30152).format(format_bold(activate_link)),
+            line2=addon.getLocalizedString(30153).format(format_bold(user_code)),
+            line3="{}\n{}".format(
+                addon.getLocalizedString(30154).format(format_bold(user_code)),
+                addon.getLocalizedString(30155).format(format_bold("OK")),
+            ),
+        )
+
+        user_name = api.oauth_device_authorize(user_code, device_code)
+        xbmcgui.Dialog().ok(
+            heading=addon.getLocalizedString(30151),
+            line1=addon.getLocalizedString(30156).format(user_name),
+        )
+        xbmc.executebuiltin("Container.Refresh")
+
+    elif path == PATH_AUTH_LOGOUT:
+        logout()
+        xbmc.executebuiltin("Container.Refresh")
+
+    elif path == PATH_PROFILE:
+        uri = args.get("uri", [""])[0]
+
+        if uri:
+            user = api.user(uri)
+            profile_options = listItems.profile_sub(user)
+            collection = listItems.from_collection(api.call("{}/videos".format(uri)))
+            xbmcplugin.addDirectoryItems(handle, profile_options)
+            xbmcplugin.addDirectoryItems(handle, collection, len(collection))
+            xbmcplugin.endOfDirectory(handle)
+        else:
+            xbmc.log(addon_id + ": Invalid profile uri", xbmc.LOGERROR)
+
     elif path == PATH_SETTINGS_CACHE_CLEAR:
         vfs_cache.destroy()
-        dialog = xbmcgui.Dialog()
-        dialog.ok("Vimeo", addon.getLocalizedString(30501))
+        xbmcgui.Dialog().ok("Vimeo", addon.getLocalizedString(30501))
 
     else:
         xbmc.log(addon_id + ": Path not found", xbmc.LOGERROR)
@@ -198,3 +239,9 @@ def add_subtitles(item, texttracks_url):
         item.addStreamInfo("subtitle", {"language": subtitle["language"]})
     item.setSubtitles(paths)
     return item
+
+
+def logout():
+    settings.set("api.accesstoken", "")
+    vfs.delete(api.api_user_cache_key)
+    vfs_cache.destroy()

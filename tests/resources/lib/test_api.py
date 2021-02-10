@@ -1,13 +1,13 @@
 import json
 import sys
 
-from unittest import TestCase
+from unittest import skip, TestCase
 from unittest.mock import MagicMock, Mock
 sys.modules["xbmc"] = xbmcMock = MagicMock()
 sys.modules["xbmcaddon"] = MagicMock()
 sys.modules["xbmcgui"] = MagicMock()
+from resources.lib.api import Api, PasswordRequiredException
 from resources.lib.kodi.settings import Settings
-from resources.lib.vimeo.api import Api, PasswordRequiredException
 
 
 class ApiTestCase(TestCase):
@@ -92,14 +92,10 @@ class ApiTestCase(TestCase):
         res = self.api.search("foo", "bar")
 
         self.assertEqual(res.items[0].label, "Petzl-sport")
-        self.assertEqual(res.items[0].info["country"], "France")
-        self.assertEqual(res.items[0].thumb, "https://i.vimeocdn.com/portrait/377115_300x300")
-        self.assertEqual(res.items[0].uri, "/users/3255081/videos")
+        self.assertEqual(res.items[0].data["location"], "France")
 
         self.assertEqual(res.items[1].label, "DSN Digital Sport Network")
-        self.assertEqual(res.items[1].info["country"], "")
-        self.assertEqual(res.items[1].thumb, "https://i.vimeocdn.com/portrait/18463331_300x300")
-        self.assertEqual(res.items[1].uri, "/users/64177650/videos")
+        self.assertEqual(res.items[1].data["location"], "")
 
     def test_search_channels(self):
         with open("./tests/mocks/api_channels_search.json") as f:
@@ -331,6 +327,15 @@ class ApiTestCase(TestCase):
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/123")
         self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.0.11%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
+
+    @skip("Can't easily mock the Vimeo client")
+    def test_authorize(self):
+        with open("./tests/mocks/api_authorize.json") as f:
+            mock_data = json.loads(f.read())
+
+        # self.api.api_client.device_code_authorize = Mock(return_value=(mock_data["access_token"], mock_data["user"], mock_data["scope"]))
+        # res = self.api.oauth_device_authorize("72QX6Y", "d1d80ccf128de92517eaac61aad2b539ce2d5af9")
+        # self.assertEqual(res, "Philip Gray")
 
     def test_text_tracks(self):
         with open("./tests/mocks/web.vtt") as f:

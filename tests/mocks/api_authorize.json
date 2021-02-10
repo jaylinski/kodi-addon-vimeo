@@ -1,0 +1,274 @@
+{
+    "access_token": "xxxxxxxxxxxxxx398dc7f14cee1bfcb7",
+    "token_type": "bearer",
+    "scope": "private public",
+    "app": {
+        "name": "Vimeo Android App",
+        "uri": "/apps/53467"
+    },
+    "user": {
+        "uri": "/users/133970538",
+        "name": "Philip Gray",
+        "link": "https://vimeo.com/user133970538",
+        "capabilities": {
+            "hasLiveSubscription": false
+        },
+        "location": "",
+        "gender": "",
+        "bio": null,
+        "short_bio": null,
+        "created_time": "2021-02-18T18:12:34+00:00",
+        "pictures": [
+            {
+                "type": "portrait",
+                "width": 30,
+                "height": 30,
+                "link": "https://i.vimeocdn.com/portrait/defaults-blue_30x30.png"
+            },
+            {
+                "type": "portrait",
+                "width": 75,
+                "height": 75,
+                "link": "https://i.vimeocdn.com/portrait/defaults-blue_75x75.png"
+            },
+            {
+                "type": "portrait",
+                "width": 100,
+                "height": 100,
+                "link": "https://i.vimeocdn.com/portrait/defaults-blue_100x100.png"
+            },
+            {
+                "type": "portrait",
+                "width": 300,
+                "height": 300,
+                "link": "https://i.vimeocdn.com/portrait/defaults-blue_300x300.png"
+            }
+        ],
+        "websites": [],
+        "metadata": {
+            "connections": {
+                "activities": "/users/133970538/activities",
+                "albums": "/users/133970538/albums",
+                "appearances": {
+                    "uri": "/users/133970538/appearances",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "categories": {
+                    "uri": "/users/133970538/categories",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "channels": "/users/133970538/channels",
+                "feed": "/users/133970538/feed",
+                "followers": "/users/133970538/followers",
+                "following": "/users/133970538/following",
+                "groups": "/users/133970538/groups",
+                "likes": "/users/133970538/likes",
+                "membership": {
+                    "uri": "/users/133970538/membership/",
+                    "options": [
+                        "PATCH"
+                    ]
+                },
+                "moderated_channels": {
+                    "uri": "/users/133970538/channels?filter=moderated",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "portfolios": "/users/133970538/portfolios",
+                "videos": "/users/133970538/videos",
+                "watchlater": "/users/133970538/watchlater",
+                "shared": "/users/133970538/shared/videos",
+                "pictures": "/users/133970538/pictures",
+                "violations": null,
+                "recommended_users": {
+                    "uri": "/me/recommendations/users",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "recommended_channels": {
+                    "uri": "/me/recommendations/channels",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 11
+                },
+                "watched_videos": {
+                    "uri": "/me/watched/videos",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "folders_root": {
+                    "uri": "/users/133970538/folders/root",
+                    "options": [
+                        "GET"
+                    ]
+                },
+                "team_members": {
+                    "uri": "/users/133970538/teammembers",
+                    "options": [
+                        "GET",
+                        "POST"
+                    ],
+                    "total": 0,
+                    "invites_remaining": 0,
+                    "max_seats": 0
+                },
+                "teams": {
+                    "uri": "/users/133970538/teams",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 1
+                },
+                "block": {
+                    "uri": "/me/block",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                },
+                "connected_apps": {
+                    "uri": "/me/connected_apps",
+                    "options": [
+                        "GET"
+                    ],
+                    "total": 0
+                }
+            },
+            "interactions": {
+                "facebook_connected_app": {
+                    "is_connected": false,
+                    "options": [
+                        "PUT"
+                    ],
+                    "uri": "/me/connected_apps/facebook",
+                    "all_scopes": {
+                        "publish_to_social": [
+                            "public_profile",
+                            "pages_show_list",
+                            "read_insights",
+                            "publish_video",
+                            "pages_manage_metadata",
+                            "pages_manage_posts"
+                        ],
+                        "business_creative": [
+                            "business_creative_management",
+                            "business_creative_insights"
+                        ]
+                    }
+                },
+                "youtube_connected_app": {
+                    "is_connected": false,
+                    "options": [
+                        "PUT"
+                    ],
+                    "uri": "/me/connected_apps/youtube",
+                    "all_scopes": {
+                        "publish_to_social": [
+                            "https://www.googleapis.com/auth/userinfo.profile",
+                            "https://www.googleapis.com/auth/youtube",
+                            "https://www.googleapis.com/auth/youtube.force-ssl",
+                            "https://www.googleapis.com/auth/youtube.readonly",
+                            "https://www.googleapis.com/auth/youtube.upload",
+                            "https://www.googleapis.com/auth/youtubepartner",
+                            "https://www.googleapis.com/auth/youtubepartner-channel-audit",
+                            "https://www.googleapis.com/auth/yt-analytics-monetary.readonly",
+                            "https://www.googleapis.com/auth/yt-analytics.readonly"
+                        ]
+                    }
+                },
+                "linkedin_connected_app": {
+                    "is_connected": false,
+                    "options": [
+                        "PUT"
+                    ],
+                    "uri": "/me/connected_apps/linkedin",
+                    "all_scopes": {
+                        "publish_to_social": [
+                            "r_liteprofile",
+                            "w_member_social",
+                            "r_organization_social",
+                            "w_organization_social",
+                            "r_organization_admin"
+                        ]
+                    }
+                },
+                "twitter_connected_app": {
+                    "is_connected": false,
+                    "options": [
+                        "PUT"
+                    ],
+                    "uri": "/me/connected_apps/twitter",
+                    "all_scopes": {
+                        "publish_to_social": []
+                    }
+                },
+                "pinterest_connected_app": {
+                    "is_connected": false,
+                    "options": [
+                        "PUT"
+                    ],
+                    "uri": "/me/connected_apps/pinterest",
+                    "all_scopes": {
+                        "publish_to_social": [
+                            "read_pins",
+                            "read_users",
+                            "read_secret_boards",
+                            "read_secret_pins",
+                            "write_boards",
+                            "write_pins"
+                        ],
+                        "business_creative": []
+                    }
+                }
+            }
+        },
+        "location_details": {
+            "formatted_address": "",
+            "latitude": null,
+            "longitude": null,
+            "city": null,
+            "state": null,
+            "neighborhood": null,
+            "sub_locality": null,
+            "state_iso_code": null,
+            "country": null,
+            "country_iso_code": null
+        },
+        "skills": [],
+        "available_for_hire": false,
+        "can_work_remotely": false,
+        "preferences": {
+            "videos": {
+                "privacy": "anybody"
+            }
+        },
+        "content_filter": [
+            "language",
+            "drugs",
+            "violence",
+            "nudity",
+            "safe",
+            "unrated"
+        ],
+        "emails": [],
+        "resource_key": "7e4ccd4b93df07ee82e0060dad4061d041493d15",
+        "account": "basic",
+        "badge": {
+            "type": null
+        },
+        "stats": {}
+    }
+}
