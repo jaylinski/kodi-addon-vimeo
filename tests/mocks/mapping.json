@@ -1,5 +1,9 @@
 [
     {
+        "url": "https://api.vimeo.com/oauth/device/authorize",
+        "mock": "api_authorize.json"
+    },
+    {
         "url": "https://api.vimeo.com/categories?fields=uri%2Cresource_key%2Cname%2Ctop_level%2Cpictures.sizes.width%2Cpictures.sizes.link%2Cparent%2Csubcategories%2Cmetadata.interactions%2Cmetadata.connections.videos%2Cmetadata.connections.users%2Cicon.sizes.width%2Cicon.sizes.link&sort=last_video_featured_time&direction=desc",
         "mock": "api_categories.json"
     },
@@ -14,6 +18,10 @@
     {
         "url": "https://api.vimeo.com/ondemand/pages/25096/videos/97663163",
         "mock": "api_ondemand_video.json"
+    },
+    {
+        "url": "https://api.vimeo.com/users/85624036",
+        "mock": "api_user.json"
     },
     {
         "url": "https://api.vimeo.com/users?page=1&per_page=3&query=sport",

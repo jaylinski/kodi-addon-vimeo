@@ -123,12 +123,45 @@ msgctxt "#30104"
 msgid "Categories"
 msgstr ""
 
+msgctxt "#30105"
+msgid "Profile"
+msgstr ""
+
 msgctxt "#30108"
 msgid "Settings"
 msgstr ""
 
 msgctxt "#30109"
-msgid "Sign in"
+msgid "Log in"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Log out"
+msgstr ""
+
+# GUI - Auth
+msgctxt "#30151"
+msgid "Authorization"
+msgstr ""
+
+msgctxt "#30152"
+msgid "1. Open the link {}"
+msgstr ""
+
+msgctxt "#30153"
+msgid "2. Log in and enter the code {}"
+msgstr ""
+
+msgctxt "#30154"
+msgid "3. Authorize the app"
+msgstr ""
+
+msgctxt "#30155"
+msgid "4. Confirm with {}"
+msgstr ""
+
+msgctxt "#30156"
+msgid "You are now logged in as {}!"
 msgstr ""
 
 # GUI - Search
@@ -190,6 +223,27 @@ msgstr ""
 
 msgctxt "#30602"
 msgid "Clear"
+msgstr ""
+
+# GUI - Profile
+msgctxt "#30701"
+msgid "Followers"
+msgstr ""
+
+msgctxt "#30702"
+msgid "Following"
+msgstr ""
+
+msgctxt "#30703"
+msgid "Likes"
+msgstr ""
+
+msgctxt "#30704"
+msgid "Albums"
+msgstr ""
+
+msgctxt "#30705"
+msgid "Watch Later"
 msgstr ""
 
 # GUI - Generic

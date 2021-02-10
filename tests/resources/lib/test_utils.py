@@ -1,5 +1,5 @@
 from unittest import TestCase
-from resources.lib.vimeo.utils import webvtt_to_srt
+from resources.lib.utils import webvtt_to_srt
 
 
 class UtilsTestCase(TestCase):

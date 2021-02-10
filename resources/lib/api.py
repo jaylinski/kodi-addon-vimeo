@@ -1,12 +1,11 @@
 from future import standard_library
 standard_library.install_aliases()  # noqa: E402
 
+import json
 import requests
 import urllib.parse
 import xbmc
 
-from .client import VimeoClient
-from .auth import GrantFailed
 from .api_collection import ApiCollection
 from .utils import webvtt_to_srt
 from resources.lib.models.category import Category
@@ -14,6 +13,8 @@ from resources.lib.models.channel import Channel
 from resources.lib.models.group import Group
 from resources.lib.models.user import User
 from resources.lib.models.video import Video
+from resources.lib.vimeo.auth import GrantFailed
+from resources.lib.vimeo.client import VimeoClient
 
 
 class Api:
@@ -24,6 +25,8 @@ class Api:
     api_sort = None
     api_fallback = False
     api_fallback_params = ["filter"]
+    api_oauth_scope = "public,private,interact"
+    api_user_cache_key = "user.json"
 
     # Extracted from public Vimeo Android App
     # This is a special client ID which will return playable URLs
@@ -54,7 +57,7 @@ class Api:
     def api_client(self):
         self.api_fallback = False
 
-        # It is possible to set a custom access token in the settings
+        # It is possible to set a custom access token by logging in or adding it in the settings
         access_token_settings = self.settings.get("api.accesstoken")
         if access_token_settings:
             xbmc.log("plugin.video.vimeo::Api() Using custom access token", xbmc.LOGDEBUG)
@@ -100,6 +103,16 @@ class Api:
 
         return "{}"
 
+    def oauth_device(self):
+        return self.api_client.load_device_code(self.api_oauth_scope)
+
+    def oauth_device_authorize(self, user_code, device_code):
+        token, user, scope = self.api_client.device_code_authorize(user_code, device_code)
+        self.settings.set("api.accesstoken", token)
+        self.vfs.write(self.api_user_cache_key, json.dumps(user))
+
+        return user["name"]
+
     def call(self, url):
         params = self._get_default_params()
         res = self._do_api_request(url, params)
@@ -111,6 +124,10 @@ class Api:
         params["query"] = self.search_template.format(query)
         res = self._do_api_request("/{kind}".format(kind=kind), params)
         return self._map_json_to_collection(res)
+
+    def user(self, uri):
+        params = self._get_default_params()
+        return self._do_api_request(uri, params)
 
     def channel(self, channel):
         params = self._get_default_params()
@@ -168,6 +185,8 @@ class Api:
         return self._map_json_to_collection(res)
 
     def _do_api_request(self, path, params):
+        xbmc.log("plugin.video.vimeo::Api() Requesting '{}'".format(path), xbmc.LOGDEBUG)
+
         if self._request_requires_fallback(path, params):
             return self.api_client_fallback.get(path, params=params).json()
 
@@ -263,13 +282,7 @@ class Api:
 
                 elif is_user:
                     user = User(id=item["resource_key"], label=item["name"])
-                    user.thumb = self._get_picture(item["pictures"], 3)
-                    user.uri = item["metadata"]["connections"]["videos"]["uri"]
-                    user.info = {
-                        "country": item.get("location", ""),
-                        "date": item["created_time"],
-                        "description": item["bio"],
-                    }
+                    user.data = item
                     collection.items.append(user)
 
                 else:
@@ -353,7 +366,8 @@ class Api:
             # Avoid rate limiting:
             # https://developer.vimeo.com/guidelines/rate-limiting#avoid-rate-limiting
             "fields": "uri,resource_key,name,description,type,duration,created_time,location,"
-                      "bio,stats,user,account,release_time,pictures,metadata,play,live.status"
+                      "bio,short_bio,stats,user,account,release_time,pictures,metadata,play,"
+                      "live.status,websites"
         }
 
     def _request_requires_fallback(self, path, params):

@@ -1,0 +1,240 @@
+{
+    "uri": "/users/85624036",
+    "name": "Filip Nilsson",
+    "link": "https://vimeo.com/user85624036",
+    "capabilities": {
+        "hasLiveSubscription": false
+    },
+    "location": "Göteborg, Sverige",
+    "gender": "m",
+    "bio": "Director",
+    "short_bio": "COMMERCIAL AND MUSIC VIDEO DIRECTOR. Rep by: UK &amp; US: https://objectanimal.com FRANCE: http://www.henry.tv/ CANADA http://www.opc.tv/",
+    "created_time": "2018-05-29T07:54:52+00:00",
+    "pictures": {
+        "uri": "/users/85624036/pictures/28658249",
+        "active": true,
+        "type": "custom",
+        "sizes": [
+            {
+                "width": 30,
+                "height": 30,
+                "link": "https://i.vimeocdn.com/portrait/28658249_30x30"
+            },
+            {
+                "width": 72,
+                "height": 72,
+                "link": "https://i.vimeocdn.com/portrait/28658249_72x72"
+            },
+            {
+                "width": 75,
+                "height": 75,
+                "link": "https://i.vimeocdn.com/portrait/28658249_75x75"
+            },
+            {
+                "width": 100,
+                "height": 100,
+                "link": "https://i.vimeocdn.com/portrait/28658249_100x100"
+            },
+            {
+                "width": 144,
+                "height": 144,
+                "link": "https://i.vimeocdn.com/portrait/28658249_144x144"
+            },
+            {
+                "width": 216,
+                "height": 216,
+                "link": "https://i.vimeocdn.com/portrait/28658249_216x216"
+            },
+            {
+                "width": 288,
+                "height": 288,
+                "link": "https://i.vimeocdn.com/portrait/28658249_288x288"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "link": "https://i.vimeocdn.com/portrait/28658249_300x300"
+            },
+            {
+                "width": 360,
+                "height": 360,
+                "link": "https://i.vimeocdn.com/portrait/28658249_360x360"
+            }
+        ],
+        "resource_key": "a188750b6de1dcae5ff60235678951fd18cf8e6e",
+        "default_picture": false
+    },
+    "websites": [],
+    "metadata": {
+        "connections": {
+            "activities": {
+                "uri": "/users/85624036/activities",
+                "options": [
+                    "GET"
+                ]
+            },
+            "albums": {
+                "uri": "/users/85624036/albums",
+                "options": [
+                    "GET"
+                ],
+                "total": 4
+            },
+            "appearances": {
+                "uri": "/users/85624036/appearances",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "categories": {
+                "uri": "/users/85624036/categories",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "channels": {
+                "uri": "/users/85624036/channels",
+                "options": [
+                    "GET"
+                ],
+                "total": 1
+            },
+            "feed": {
+                "uri": "/users/85624036/feed",
+                "options": [
+                    "GET"
+                ]
+            },
+            "followers": {
+                "uri": "/users/85624036/followers",
+                "options": [
+                    "GET"
+                ],
+                "total": 1558
+            },
+            "following": {
+                "uri": "/users/85624036/following",
+                "options": [
+                    "GET"
+                ],
+                "total": 2
+            },
+            "groups": {
+                "uri": "/users/85624036/groups",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "likes": {
+                "uri": "/users/85624036/likes",
+                "options": [
+                    "GET"
+                ],
+                "total": 10
+            },
+            "membership": {
+                "uri": "/users/85624036/membership/",
+                "options": [
+                    "PATCH"
+                ]
+            },
+            "moderated_channels": {
+                "uri": "/users/85624036/channels?filter=moderated",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "portfolios": {
+                "uri": "/users/85624036/portfolios",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "videos": {
+                "uri": "/users/85624036/videos",
+                "options": [
+                    "GET"
+                ],
+                "total": 29
+            },
+            "watchlater": {
+                "uri": "/users/85624036/watchlater",
+                "options": [
+                    "GET"
+                ],
+                "total": 0
+            },
+            "shared": {
+                "uri": "/users/85624036/shared/videos",
+                "options": [
+                    "GET"
+                ],
+                "total": 1
+            },
+            "pictures": {
+                "uri": "/users/85624036/pictures",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 1
+            },
+            "folders_root": {
+                "uri": "/users/85624036/folders/root",
+                "options": [
+                    "GET"
+                ]
+            },
+            "team_members": {
+                "uri": "/users/85624036/teammembers",
+                "options": [
+                    "GET",
+                    "POST"
+                ],
+                "total": 0,
+                "invites_remaining": 0,
+                "max_seats": 0
+            },
+            "teams": {
+                "uri": "/users/85624036/teams",
+                "options": [
+                    "GET"
+                ],
+                "total": 1
+            }
+        }
+    },
+    "location_details": {
+        "formatted_address": "Göteborg, Sverige",
+        "latitude": 57.7088699,
+        "longitude": 11.9745598,
+        "city": "Göteborg",
+        "state": "Västra Götalands län",
+        "neighborhood": null,
+        "sub_locality": null,
+        "state_iso_code": null,
+        "country": "Sverige",
+        "country_iso_code": "SE"
+    },
+    "skills": [],
+    "available_for_hire": false,
+    "can_work_remotely": false,
+    "resource_key": "b96534633e92c4b06824f4935ba7a46b710a1afa",
+    "account": "plus",
+    "badge": {
+        "type": "plus",
+        "text": "Plus",
+        "alt_text": "Learn more about Vimeo Plus",
+        "url": "/plus"
+    },
+    "preferences": {
+        "videos": {
+            "privacy": null
+        }
+    }
+}
