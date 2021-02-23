@@ -18,7 +18,7 @@ class SearchHistory:
         return {k: self.history[k] for k in list(self.history)[:self.size]}
 
     def add(self, query):
-        for k, v in self.history.items():
+        for k, v in list(self.history.items()):
             if v["query"] == query:
                 return
 
@@ -27,7 +27,7 @@ class SearchHistory:
         self._save()
 
     def remove(self, query):
-        self.history = {k: v for k, v in self.history.items() if v["query"] != query}
+        self.history = {k: v for k, v in list(self.history.items()) if v["query"] != query}
         self._save()
 
     def clear(self):
