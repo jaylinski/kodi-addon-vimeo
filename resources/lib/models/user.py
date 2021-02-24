@@ -1,7 +1,3 @@
-from future import standard_library
-from future.utils import PY2
-standard_library.install_aliases()  # noqa: E402
-
 import urllib.parse
 import xbmcgui
 
@@ -29,12 +25,7 @@ class User(ListItem):
 
     @staticmethod
     def _get_description(data):
-        if PY2:
-            template = u"{}\n{}{}\n{}: {}\n{}: {}\n{}: {}\n\n{}"
-        else:
-            template = "{}\n{}{}\n{}: {}\n{}: {}\n{}: {}\n\n{}"
-
-        return template.format(
+        return "{}\n{}{}\n{}: {}\n{}: {}\n{}: {}\n\n{}".format(
             format_bold(data["name"]),
             data["location"] + "\n" if data["location"] else "",
             "\n" + data["short_bio"] + "\n" if data["short_bio"] else "",

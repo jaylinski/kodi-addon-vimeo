@@ -1,9 +1,7 @@
 #! /usr/bin/env python
 # encoding: utf-8
 
-from __future__ import absolute_import
+version = (0, 3, 10)
 
-version = (0, 3, 10)  # noqa: E402
-
-from .client import VimeoClient
-from . import exceptions
+from .client import VimeoClient  # noqa: E402
+from . import exceptions  # noqa: E402
