@@ -6,6 +6,7 @@
 [![Build Status](https://travis-ci.com/jaylinski/kodi-addon-vimeo.svg?branch=master)](https://travis-ci.com/jaylinski/kodi-addon-vimeo)
 [![Link to Kodi forum](https://img.shields.io/badge/Kodi-Forum-informational.svg)](https://forum.kodi.tv/showthread.php?tid=220437)
 [![Link to Kodi wiki](https://img.shields.io/badge/Kodi-Wiki-informational.svg)](https://kodi.wiki/view/Add-on:Vimeo)
+[![Link to Kodi releases](https://img.shields.io/badge/Kodi-v19%20%22Leia%22-green.svg)](https://kodi.wiki/view/Releases)
 [![Link to Kodi releases](https://img.shields.io/badge/Kodi-v18%20%22Leia%22-green.svg)](https://kodi.wiki/view/Releases)
 [![Link to Kodi releases](https://img.shields.io/badge/Kodi-v17%20%22Krypton%22-green.svg)](https://kodi.wiki/view/Releases)
 
@@ -59,13 +60,6 @@ Run `pipenv run lint`.
 ### Test
 
 Run `pipenv run test`.
-
-> Requires at least Python 3.6!
-
-## Roadmap
-
-* Re-implement all features from original add-on
-* Implement [enhancements](https://github.com/jaylinski/kodi-addon-vimeo/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
 
 ## Attributions
 

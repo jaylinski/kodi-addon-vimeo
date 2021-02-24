@@ -1,7 +1,3 @@
-from future import standard_library
-from future.utils import PY2
-standard_library.install_aliases()  # noqa: E402
-
 import os
 import sys
 import urllib.parse
@@ -23,8 +19,7 @@ addon = xbmcaddon.Addon()
 addon_id = addon.getAddonInfo("id")
 addon_base = "plugin://" + addon_id
 addon_profile_path = xbmc.translatePath(addon.getAddonInfo("profile"))
-if PY2:
-    addon_profile_path = addon_profile_path.decode("utf-8")
+
 vfs = VFS(addon_profile_path)
 vfs_cache = VFS(os.path.join(addon_profile_path, "cache/"))
 settings = Settings(addon)
@@ -172,9 +167,9 @@ def run():
         user_code = device_code_response["user_code"]
         xbmcgui.Dialog().ok(
             heading=addon.getLocalizedString(30151),
-            line1=addon.getLocalizedString(30152).format(format_bold(activate_link)),
-            line2=addon.getLocalizedString(30153).format(format_bold(user_code)),
-            line3="{}\n{}".format(
+            message="{}\n{}\n{}\n{}".format(
+                addon.getLocalizedString(30152).format(format_bold(activate_link)),
+                addon.getLocalizedString(30153).format(format_bold(user_code)),
                 addon.getLocalizedString(30154).format(format_bold(user_code)),
                 addon.getLocalizedString(30155).format(format_bold("OK")),
             ),
@@ -183,7 +178,7 @@ def run():
         user_name = api.oauth_device_authorize(user_code, device_code)
         xbmcgui.Dialog().ok(
             heading=addon.getLocalizedString(30151),
-            line1=addon.getLocalizedString(30156).format(user_name),
+            message=addon.getLocalizedString(30156).format(user_name),
         )
         xbmc.executebuiltin("Container.Refresh")
 

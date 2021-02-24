@@ -326,7 +326,7 @@ class ApiTestCase(TestCase):
         self.api.video_stream = "1080p"
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/123")
-        self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.0.11%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
+        self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.2.0%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
 
     @skip("Can't easily mock the Vimeo client")
     def test_authorize(self):
