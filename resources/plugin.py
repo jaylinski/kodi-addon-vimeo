@@ -25,7 +25,7 @@ vfs = VFS(addon_profile_path)
 vfs_cache = VFS(os.path.join(addon_profile_path, "cache/"))
 settings = Settings(addon)
 cache = Cache(settings, vfs_cache)
-api = Api(settings, xbmc.getLanguage(xbmc.ISO_639_1), vfs, cache)
+api = Api(settings, xbmc.getLanguage(xbmc.ISO_639_1), (vfs, vfs_cache), cache)
 search_history = SearchHistory(settings, vfs)
 listItems = Items(addon, addon_base, settings, search_history, vfs)
 

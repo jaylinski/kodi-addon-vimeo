@@ -259,12 +259,14 @@ class ApiTestCase(TestCase):
 
         # Live stream (HLS)
         self.api.video_stream = "HLS (Adaptive)"
+        self.api.video_av1 = True  # Avoids HTTP request in `api._hls_playlist_without_av1_streams`
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/401749070")
         self.assertEqual(res, "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/hls")
 
         # Live stream (HLS fallback)
         self.api.video_stream = "720p"
+        self.api.video_av1 = True  # Avoids HTTP request in `api._hls_playlist_without_av1_streams`
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/401749070")
         self.assertEqual(res, "https://player.vimeo.com/live/7e80cc02-afdd-48fc-9a49-95078c7fbcd3/playlist/hls")
