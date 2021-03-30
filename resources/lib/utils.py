@@ -1,11 +1,47 @@
+import os
 import re
+import urllib.parse
+
+
+def m3u8_without_av1(m3u8, base_url):
+    """
+    Strip AV1 codec streams from m3u8 master playlist.
+    :param m3u8: string
+    :param base_url: string
+    :return: string
+    """
+    m3u8_master_without_av1 = ""
+
+    remove_line = False
+    for line in m3u8.splitlines():
+        av1 = re.search(r"CODECS=\"av01", line)
+        url = re.search(r"^\.\./", line)
+        url_media = re.search(r"URI=\"(.*\.m3u8.*)\"", line)
+        if remove_line:
+            remove_line = False
+            continue
+        elif not av1:
+            if url_media:
+                url_absolute = urllib.parse.urljoin(base_url, url_media.group(1))
+                m3u8_master_without_av1 += line.replace(url_media.group(1), url_absolute)
+            elif url:
+                m3u8_master_without_av1 += urllib.parse.urljoin(base_url, line)
+            else:
+                m3u8_master_without_av1 += line
+
+            m3u8_master_without_av1 += os.linesep
+            remove_line = False
+        else:
+            remove_line = True
+
+    return m3u8_master_without_av1
 
 
 def webvtt_to_srt(webvtt):
     srt = ""
     counter = 1
 
-    for line in webvtt.split("\n"):
+    for line in webvtt.splitlines():
         if line.startswith("WEBVTT"):
             continue
         if counter == 1 and line == "":
@@ -26,4 +62,4 @@ def webvtt_to_srt(webvtt):
         else:
             srt += line + "\n"
 
-    return srt[:-1]
+    return srt
