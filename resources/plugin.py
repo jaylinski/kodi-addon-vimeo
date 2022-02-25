@@ -5,6 +5,7 @@ import xbmc
 import xbmcaddon
 import xbmcgui
 import xbmcplugin
+import xbmcvfs
 
 from resources.lib.api import Api, PasswordRequiredException, WrongPasswordException
 from resources.lib.kodi.cache import Cache
@@ -18,7 +19,7 @@ from resources.routes import *
 addon = xbmcaddon.Addon()
 addon_id = addon.getAddonInfo("id")
 addon_base = "plugin://" + addon_id
-addon_profile_path = xbmc.translatePath(addon.getAddonInfo("profile"))
+addon_profile_path = xbmcvfs.translatePath(addon.getAddonInfo("profile"))
 
 vfs = VFS(addon_profile_path)
 vfs_cache = VFS(os.path.join(addon_profile_path, "cache/"))
