@@ -83,19 +83,22 @@ def webvtt_to_srt(webvtt):
         if counter == 1 and line == "":
             continue
 
-        matches = re.match(r"^(\d{2}):(\d{2}).(\d{3})\s-->\s(\d{2}):(\d{2}).(\d{3})", line)
+        matches = re.match(r"^(?P<fh>\d{2}:)?(?P<fm>\d{2}):(?P<fs>\d{2}).(?P<fms>\d{3})\s-->\s(?P<th>\d{2}:)?(?P<tm>\d{2}):(?P<ts>\d{2}).(?P<tms>\d{3})", line)
         if matches:
-            srt += str(counter) + "\n"
-            srt += "00:{}:{},{} --> 00:{}:{},{}\n".format(
-                matches.group(1),
-                matches.group(2),
-                matches.group(3),
-                matches.group(4),
-                matches.group(5),
-                matches.group(6),
+            srt += str(counter) + os.linesep
+            srt += "{}{}:{},{} --> {}{}:{},{}{}".format(
+                matches.group('fh') or "00:",
+                matches.group('fm'),
+                matches.group('fs'),
+                matches.group('fms'),
+                matches.group('th') or "00:",
+                matches.group('tm'),
+                matches.group('ts'),
+                matches.group('tms'),
+                os.linesep
             )
             counter += 1
         else:
-            srt += line + "\n"
+            srt += line + os.linesep
 
     return srt

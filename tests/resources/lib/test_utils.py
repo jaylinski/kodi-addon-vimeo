@@ -34,8 +34,14 @@ class UtilsTestCase(TestCase):
         with open("./tests/mocks/web.vtt") as f:
             webvtt = f.read()
 
+        with open("./tests/mocks/web_with_hours.vtt") as f:
+            webvtt_with_hours = f.read()
+
         with open("./tests/mocks/web.srt") as f:
             srt = f.read()
 
         converted_subtitle = webvtt_to_srt(webvtt)
+        self.assertEqual(srt, converted_subtitle)
+
+        converted_subtitle = webvtt_to_srt(webvtt_with_hours)
         self.assertEqual(srt, converted_subtitle)
