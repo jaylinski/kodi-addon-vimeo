@@ -29,7 +29,7 @@ class User(ListItem):
             format_bold(data["name"]),
             data["location"] + "\n" if data["location"] else "",
             "\n" + data["short_bio"] + "\n" if data["short_bio"] else "",
-            "Followers",
+            "Followers",  # TODO localize
             data["metadata"]["connections"]["followers"]["total"],
             "Following",
             data["metadata"]["connections"]["following"]["total"],
