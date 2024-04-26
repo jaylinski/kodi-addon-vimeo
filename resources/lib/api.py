@@ -298,10 +298,6 @@ class Api:
         res = self._do_api_request(uri, {"fields": "uri,type,play"})
         return self._extract_url_from_search_response(res["play"])
 
-    def _video_matches(self, video, video_format):
-        video_height = video_format[1].replace("p", "")
-        return str(video["height"]) == video_height and video["codec"] == self._get_video_codec()
-
     def _extract_url_from_search_response(self, video_files):
         video_format = self.settings.VIDEO_FORMAT[self.video_stream]
         video_format = video_format.split(":")
@@ -315,17 +311,20 @@ class Api:
             return self._hls_playlist_without_av1_streams(video_files["hls"]["link"])
 
         elif video_type == "progressive" or video_files.get("hls") is None:
-            for video_file in video_files["progressive"]:
-                if self._video_matches(video_file, video_format):
-                    return video_file["link"]
+            # Use a smart quality fallback for videos with weird ratios like 1000x1000
+            nearest_lower_quality = [0, None]
+            video_height = video_format[1].replace("p", "")
+            video_height = int(video_height) if video_height.isdigit() else 0
 
-            # Fallback if no matching quality was found
             for video_file in video_files["progressive"]:
                 if video_file["codec"] == self._get_video_codec():
-                    return video_file["link"]
+                    if video_file["height"] == video_height:
+                        return video_file["link"]
+                    if video_height > video_file["height"] > nearest_lower_quality[0]:
+                        nearest_lower_quality = [video_height, video_file["link"]]
 
-            # Fallback if fallback failed
-            return video_files["progressive"][0]["link"]
+            # Fallback if no exact match
+            return nearest_lower_quality[1] or video_files["progressive"][0]["link"]
 
         else:
             raise RuntimeError("Could not extract video URL")
