@@ -108,9 +108,7 @@ def run():
                         xbmcgui.NOTIFICATION_ERROR
                     )
 
-            playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
             resolve_list_item(handle, collection[0][1], password, fetch_subtitles)
-            playlist.add(url=collection[0][0], listitem=collection[0][1])
         else:
             xbmc.log(addon_id + ": Invalid play param", xbmc.LOGERROR)
 
