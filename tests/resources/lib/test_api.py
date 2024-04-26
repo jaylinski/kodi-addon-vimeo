@@ -246,7 +246,7 @@ class ApiTestCase(TestCase):
         self.api.video_stream = "720p"  # Resolution does not exist in API response
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/352494023")
-        self.assertEqual(res, "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794570.mp4")
+        self.assertEqual(res, "https://vimeo-prod-skyfire-std-us.storage.googleapis.com/01/498/14/352494023/1430794417.mp4")
 
         # HLS stream
         self.api.video_stream = "HLS (Adaptive)"
