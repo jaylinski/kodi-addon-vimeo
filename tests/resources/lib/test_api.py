@@ -6,7 +6,7 @@ from unittest.mock import MagicMock, Mock
 sys.modules["xbmc"] = xbmcMock = MagicMock()
 sys.modules["xbmcaddon"] = MagicMock()
 sys.modules["xbmcgui"] = MagicMock()
-from resources.lib.api import Api, PasswordRequiredException
+from resources.lib.api import Api, PasswordRequiredException, ResourceRestrictedException
 from resources.lib.kodi.settings import Settings
 
 
@@ -329,6 +329,14 @@ class ApiTestCase(TestCase):
         self.api._do_api_request = Mock(return_value=json.loads(mock_data))
         res = self.api.resolve_media_url("/videos/123")
         self.assertEqual(res, "http://a.b/c.mp4|User-Agent=pyvimeo%201.2.0%3B%20%28http%3A//developer.vimeo.com/api/docs%29")
+
+    def test_geo_block(self):
+        with open("./tests/mocks/api_geo_block.json") as f:
+            mock_data = f.read()
+
+        self.api._do_api_request = Mock(return_value=json.loads(mock_data))
+
+        self.assertRaises(ResourceRestrictedException, self.api.search, "test", "videos")
 
     @skip("Can't easily mock the Vimeo client")
     def test_authorize(self):

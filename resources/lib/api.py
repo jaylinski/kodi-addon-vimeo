@@ -211,6 +211,9 @@ class Api:
         if self._request_was_bad(json_obj) == 2222:
             raise WrongPasswordException()
 
+        if "error_code" in json_obj and json_obj["error_code"] == 5451:
+            raise ResourceRestrictedException()
+
         if "type" in json_obj and json_obj["type"] in ("video", "live"):
             # If we are dealing with a single video, pack it into a dict
             json_obj = {"data": [json_obj]}
@@ -441,4 +444,8 @@ class PasswordRequiredException(Exception):
 
 
 class WrongPasswordException(Exception):
+    pass
+
+
+class ResourceRestrictedException(Exception):
     pass
