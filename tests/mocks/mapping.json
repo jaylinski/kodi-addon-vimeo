@@ -12,6 +12,10 @@
         "mock": "api_channels_search.json"
     },
     {
+        "url": "search and other endpoints are blocked in most non US countries",
+        "mock": "api_geo_block.json"
+    },
+    {
         "url": "https://api.vimeo.com/groups?page=2&per_page=3&query=sport",
         "mock": "api_groups_search.json"
     },
