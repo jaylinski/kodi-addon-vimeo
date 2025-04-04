@@ -18,6 +18,8 @@
         <source>https://github.com/jaylinski/kodi-addon-vimeo</source>
         <news>6.0.2 (2025-02-06)
 Handle Vimeo geo-blocking by displaying an error to affected users
+Don't add video to playlist when shared with addon
+Improve video-quality fallback for non-HLS video-formats
 
 6.0.1 (2022-02-25)
 Fixed subtitle conversion issue
