@@ -10,7 +10,9 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="de_DE">Vimeo lässt dich fantastische Videos der weltbesten Filmemacher entdecken.</summary>
         <summary lang="en_GB">Vimeo lets you discover amazing videos from the world’s best creators.</summary>
+        <summary lang="sv_SE">Med Vimeo kan du upptäcka fantastiska videoklipp från världens bästa kreatörer.</summary>
         <disclaimer lang="en_GB">This plugin is not official, approved or endorsed by Vimeo.</disclaimer>
+        <disclaimer lang="sv_SE">Detta tillägg är inte officiellt, godkänt eller supporterat av Vimeo.</disclaimer>
         <platform>all</platform>
         <license>MIT</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=220437</forum>
