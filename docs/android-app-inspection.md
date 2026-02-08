@@ -1,5 +1,9 @@
 # Inspecting the Vimeo Android App
 
+> Note: extracting the OAuth client-credentials from the Android app doesn't work
+>       anymore, since the requests require a Play Integrity API `deviceIntegrity` token:
+>       https://github.com/jaylinski/kodi-addon-vimeo/issues/74
+
 ## Prerequisites
 
 * Ubuntu 18.04
